@@ -15,7 +15,7 @@ const Post = (props) => {
 export default Post;
 
 export async function generateStaticParams() {
-  return allPosts.map((post) => {
-    slug: post._raw.flattenedPath;
-  });
+  return allPosts.map((post) => ({
+    slug: post._raw.flattenedPath,
+  }));
 }
