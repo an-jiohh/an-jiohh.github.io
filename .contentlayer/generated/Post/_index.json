@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Next.js",
+    "date": "2022-03-10",
+    "description": "설명란입니다. 설명을 적어요~",
+    "body": {
+      "raw": "\n## 제목\n\n- 내용 1\n- 내용 2\n",
+      "code": "var Component=(()=>{var u=Object.create;var i=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),f=(t,n)=>{for(var r in n)i(t,r,{get:n[r],enumerable:!0})},o=(t,n,r,c)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let s of h(n))!j.call(t,s)&&s!==r&&i(t,s,{get:()=>n[s],enumerable:!(c=x(n,s))||c.enumerable});return t};var g=(t,n,r)=>(r=t!=null?u(m(t)):{},o(n||!t||!t.__esModule?i(r,\"default\",{value:t,enumerable:!0}):r,t)),p=t=>o(i({},\"__esModule\",{value:!0}),t);var a=_((F,l)=>{l.exports=_jsx_runtime});var w={};f(w,{default:()=>b,frontmatter:()=>D});var e=g(a()),D={title:\"Next.js\",date:new Date(16468704e5),description:\"\\uC124\\uBA85\\uB780\\uC785\\uB2C8\\uB2E4. \\uC124\\uBA85\\uC744 \\uC801\\uC5B4\\uC694~\"};function d(t){let n=Object.assign({h2:\"h2\",ul:\"ul\",li:\"li\"},t.components);return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.h2,{children:\"\\uC81C\\uBAA9\"}),`\n`,(0,e.jsxs)(n.ul,{children:[`\n`,(0,e.jsx)(n.li,{children:\"\\uB0B4\\uC6A9 1\"}),`\n`,(0,e.jsx)(n.li,{children:\"\\uB0B4\\uC6A9 2\"}),`\n`]})]})}function M(t={}){let{wrapper:n}=t.components||{};return n?(0,e.jsx)(n,Object.assign({},t,{children:(0,e.jsx)(d,t)})):d(t)}var b=M;return p(w);})();\n;return Component;"
+    },
+    "_id": "firtst.mdx",
+    "_raw": {
+      "sourceFilePath": "firtst.mdx",
+      "sourceFileName": "firtst.mdx",
+      "sourceFileDir": ".",
+      "contentType": "mdx",
+      "flattenedPath": "firtst"
+    },
+    "type": "Post"
+  }
+]
