@@ -13,7 +13,7 @@ export default function Category() {
     <div className={`mt-10 flex flex-col`}>
         {
             tags.map((tag)=>(
-                <h1>{tag}</h1>
+                <h1 key={tag}>{tag}</h1>
             ))
         }
       {posts.map((post) => (
