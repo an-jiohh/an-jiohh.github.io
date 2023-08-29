@@ -8,7 +8,14 @@ export const Post = defineDocumentType(() => ({
     title: { type: "string", required: true },
     date: { type: "string", required: true },
     description: { type: "string", required: true },
+    tags: { type: 'list', of: { type: 'string' }, default: [] },
   },
+  computedFields:{
+    slug:{
+      type: 'string',
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, ''),
+    }
+  }
 }));
 
 export default makeSource({

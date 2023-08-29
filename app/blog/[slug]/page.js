@@ -2,7 +2,7 @@ import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
 const Post = (props) => {
-  const post = allPosts.find((p) => p._raw.flattenedPath === props.params.slug);
+  const post = allPosts.find((p) => p.slug === props.params.slug);
   const MDXComponent = useMDXComponent(post.body.code);
   return (
     <div className="mt-10 prose">
@@ -16,6 +16,6 @@ export default Post;
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
-    slug: post._raw.flattenedPath,
+    slug: post.slug,
   }));
 }
