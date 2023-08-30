@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import BlogPost from "@/components/BlogPost";
 import { allPosts } from "contentlayer/generated";
+import Link from "next/link";
 
 export default function Category() {
   const posts = allPosts.sort(
@@ -13,8 +14,15 @@ export default function Category() {
     <div className={`mt-10 flex flex-col`}>
         {
             tags.map((tag)=>(
+              <Link
+              href={`/category/${tag}`}
+              passHref
+              className="w-full my-7 hover:-translate-x-1.5"
+            >
                 <h1 key={tag}>{tag}</h1>
+                </Link>
             ))
+            
         }
       {posts.map((post) => (
         <BlogPost

@@ -13,7 +13,8 @@ export const Post = defineDocumentType(() => ({
   computedFields:{
     slug:{
       type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, ''),
+      // resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, ''),
+      resolve: (doc) => doc._raw.flattenedPath.replace(/\//g, ''),
     }
   }
 }));
