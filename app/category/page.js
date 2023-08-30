@@ -18,6 +18,7 @@ export default function Category() {
               href={`/category/${tag}`}
               passHref
               className="w-full my-7 hover:-translate-x-1.5"
+              key={tag}
             >
                 <h1 key={tag}>{tag}</h1>
                 </Link>
