@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={`my-5 w-full`}>
       <div className={`relative`}>
-        <Image
+        {/* <Image
           src={`/home.jpg`}
           alt="대표 이미지"
           width={`100`}
@@ -24,7 +24,7 @@ export default function Home() {
           className={`absolute top-12 font-extrabold italic text-white text-5xl md:text-9xl text flex justify-center w-full drop-shadow-lg`}
         >
           {metadata.title}
-        </span>
+        </span> */}
       </div>
       <RecentPosts posts={posts} />
     </div>

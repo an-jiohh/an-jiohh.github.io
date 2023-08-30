@@ -1,12 +1,31 @@
 import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import BlogPost from "@/components/BlogPost";
+import Link from "next/link";
 
 const tags = (props) => {
   const posts = allPosts.filter((p) => p.tags.includes(props.params.tag));
+  const set = new Set();
+  allPosts.map((post) => {post.tags.map((tag)=>set.add(tag))});
+  const tags = [...set]; 
   return (
     <div className={`mt-10 flex flex-col`}>
-      <h1 className="w-full my-7 hover:-translate-x-1.5">{props.params.tag}</h1>
+      <h1 className={`text-3xl font-extrabold`}>{props.params.tag}</h1>
+      <div className={`mt-10 mb-10 flex flex-row flex-wrap`}>
+        {
+            tags.map((tag)=>(
+              <Link
+              href={`/category/${tag}`}
+              passHref
+              className="m-2 p-0.5 hover:bg-green-300 border rounded-md bg-green-100 border-green-100"
+              key={tag}
+            >
+                {tag}
+                </Link>
+            ))
+            
+        }
+        </div>
       {posts.map((post) => (
         <BlogPost
           date={post.date}

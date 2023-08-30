@@ -14,14 +14,14 @@ const Container = (props) => {
       >
         <div className={`flex flex-row items-center`}>
           <Image
-            src={`/logo.jpg`}
+            src={`/logo.png`}
             alt="로고"
             width={40}
             height={40}
             objectFit={`cover`}
             className={`rounded-full`}
           />
-          <span className={`mx-2 font-extralight text-lg`}>
+          <span className={`mx-2 font-semibold text-lg`}>
             {metadata.title}
           </span>
         </div>

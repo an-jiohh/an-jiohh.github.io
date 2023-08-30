@@ -12,19 +12,22 @@ export default function Category() {
   const tags = [...set]; 
   return (
     <div className={`mt-10 flex flex-col`}>
+      <h1 className={`text-3xl font-extrabold`}>Category</h1>
+      <div className={`mt-10 mb-10 flex flex-row flex-wrap`}>
         {
             tags.map((tag)=>(
               <Link
               href={`/category/${tag}`}
               passHref
-              className="w-full my-7 hover:-translate-x-1.5"
+              className="m-2 p-0.5 hover:bg-green-300 border rounded-md bg-green-100 border-green-100"
               key={tag}
             >
-                <h1 key={tag}>{tag}</h1>
+                {tag}
                 </Link>
             ))
             
         }
+        </div>
       {posts.map((post) => (
         <BlogPost
           date={post.date}
