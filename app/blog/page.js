@@ -8,6 +8,7 @@ export default function Blog() {
   );
   return (
     <div className={`mt-10 flex flex-col`}>
+      <h1 className={`text-3xl font-extrabold`}>Posts</h1>
       {posts.map((post) => (
         <BlogPost
           date={post.date}

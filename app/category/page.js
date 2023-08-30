@@ -19,7 +19,7 @@ export default function Category() {
               <Link
               href={`/category/${tag}`}
               passHref
-              className="m-2 p-0.5 hover:bg-green-300 border rounded-md bg-green-100 border-green-100"
+              className="m-2 px-1.5 py-0.8 hover:bg-green-300 border rounded-md bg-green-100 border-green-100"
               key={tag}
             >
                 {tag}
@@ -33,7 +33,7 @@ export default function Category() {
           date={post.date}
           title={post.title}
           des={post.description}
-          slug={post._raw.flattenedPath}
+          slug={post.slug}
           key={post._id}
         />
       ))}
