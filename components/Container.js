@@ -29,6 +29,9 @@ const Container = (props) => {
         <Nav />
       </header>
       <main className={`w-full max-w-3xl`}>{props.children}</main>
+      <footer className={`w-full max-w-3xl items-center `}>
+        <div className={`h-28`}></div> {/* 빈칸 */}
+      </footer>
     </div>
   );
 };
