@@ -4,7 +4,8 @@ import BlogPost from "@/components/BlogPost";
 import Link from "next/link";
 
 const tags = (props) => {
-  const posts = allPosts.filter((p) => p.tags.includes(props.params.tag));
+  const paramTag = decodeURIComponent(props.params.tag);
+  const posts = allPosts.filter((p) => p.tags.includes(paramTag));
   const set = new Set();
   allPosts.map((post) => {
     post.tags.map((tag) => set.add(tag));
@@ -12,7 +13,7 @@ const tags = (props) => {
   const tags = [...set];
   return (
     <div className={`mt-10 flex flex-col`}>
-      <h1 className={`text-3xl font-extrabold`}>{props.params.tag}</h1>
+      <h1 className={`text-3xl font-extrabold`}>{paramTag}</h1>
       <div className={`mt-10 mb-10 flex flex-row flex-wrap`}>
         {tags.map((tag) => (
           <Link
