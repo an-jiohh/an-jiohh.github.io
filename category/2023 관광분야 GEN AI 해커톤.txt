@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/efb8fa6fa0f88240.css",{"as":"style"}]
-0:["RlOACtPTU7jNV_-vxfGPv",[[["",{"children":["category",{"children":[["tag","2023%20%EA%B4%80%EA%B4%91%EB%B6%84%EC%95%BC%20GEN%20AI%20%ED%95%B4%EC%BB%A4%ED%86%A4","d"],{"children":["__PAGE__?{\"tag\":\"2023 관광분야 GEN AI 해커톤\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/efb8fa6fa0f88240.css","precedence":"next"}]],"$L4"]]]]
+0:["ecs26CjnXVctANzfNDX7M",[[["",{"children":["category",{"children":[["tag","2023%20%EA%B4%80%EA%B4%91%EB%B6%84%EC%95%BC%20GEN%20AI%20%ED%95%B4%EC%BB%A4%ED%86%A4","d"],{"children":["__PAGE__?{\"tag\":\"2023 관광분야 GEN AI 해커톤\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/efb8fa6fa0f88240.css","precedence":"next"}]],"$L4"]]]]
 5:I{"id":6685,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","15:static/chunks/15-3ba436bc4958edfb.js","415:static/chunks/app/category/[tag]/page-bb91bfd865e34cf9.js"],"name":"","async":false}
 6:I{"id":3222,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","222:static/chunks/222-846c3dee61afe17f.js","572:static/chunks/app/category/page-b782545801fb1946.js"],"name":"Image","async":false}
 7:I{"id":7767,"chunks":["272:static/chunks/webpack-b095ed2a5c5bf76b.js","971:static/chunks/fd9d1056-5fc0659828b82348.js","596:static/chunks/596-5f69a5936ae99734.js"],"name":"default","async":false}
