@@ -16,5 +16,6 @@ import tourism_hackathon__1Mdx from './Tourism_Hackathon__1.mdx.json' assert { t
 import tourism_hackathon__2Mdx from './Tourism_Hackathon__2.mdx.json' assert { type: 'json' }
 import blog__firstMdx from './blog__first.mdx.json' assert { type: 'json' }
 import objects__0Mdx from './objects__0.mdx.json' assert { type: 'json' }
+import lss__9Mdx from './LSS__9.mdx.json' assert { type: 'json' }
 
-export const allPosts = [lss__1Mdx, lss__12Mdx, lss__14Mdx, lss__2Mdx, lss__3Mdx, lss__4Mdx, lss__5_1Mdx, lss__5Mdx, lss__6Mdx, lss__7_1Mdx, lss__7Mdx, lss__8Mdx, tourism_hackathon__1Mdx, tourism_hackathon__2Mdx, blog__firstMdx, objects__0Mdx]
+export const allPosts = [lss__1Mdx, lss__12Mdx, lss__14Mdx, lss__2Mdx, lss__3Mdx, lss__4Mdx, lss__5_1Mdx, lss__5Mdx, lss__6Mdx, lss__7_1Mdx, lss__7Mdx, lss__8Mdx, tourism_hackathon__1Mdx, tourism_hackathon__2Mdx, blog__firstMdx, objects__0Mdx, lss__9Mdx]
