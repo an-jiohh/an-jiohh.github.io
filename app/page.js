@@ -3,14 +3,18 @@ import Image from "next/image";
 import RecentPosts from "@/components/RecentPosts";
 import metadata from "@/data/metadata";
 import { allPosts } from "contentlayer/generated";
+import SideBar from "../components/SideBar";
 
 export default function Home() {
   const posts = allPosts.sort(
     (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
   );
+
   return (
     <div className={`my-5 w-full`}>
       <div className={`relative`}>
+        {/* 추후 사이드바 추가 */}
+        {/* <SideBar></SideBar> */}
         {/* <Image
           src={`/home.jpg`}
           alt="대표 이미지"
