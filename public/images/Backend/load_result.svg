@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" font-family="Arial, sans-serif" font-size="14">
+  <style>
+    .header { font-weight: bold; fill: white; background-color: #4a5568; }
+    .cell { fill: black; }
+    .bg1 { fill: #edf2f7; }
+    .bg2 { fill: #ffffff; }
+    rect { stroke: #cbd5e0; stroke-width: 1; }
+  </style>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="40" fill="#4a5568"/>
+  <text x="10" y="25" class="header">항목</text>
+  <text x="220" y="25" class="header">세션 방식</text>
+  <text x="420" y="25" class="header">JWT 방식</text>
+  <text x="620" y="25" class="header">비교 결과</text>
+
+  <!-- 성능 비교 항목 -->
+  <rect x="0" y="40" width="900" height="40" class="bg1"/>
+  <text x="10" y="65" class="cell">최대 RPS</text>
+  <text x="220" y="65" class="cell">3.73K</text>
+  <text x="420" y="65" class="cell">3.37K</text>
+  <text x="620" y="65" class="cell">세션 방식이 10.7% 높음</text>
+
+  <rect x="0" y="80" width="900" height="40" class="bg2"/>
+  <text x="10" y="105" class="cell">안정적 최대 RPS</text>
+  <text x="220" y="105" class="cell">3.47K</text>
+  <text x="420" y="105" class="cell">2.94K</text>
+  <text x="620" y="105" class="cell">세션 방식이 18.8% 높음</text>
+
+  <rect x="0" y="120" width="900" height="40" class="bg1"/>
+  <text x="10" y="145" class="cell">Error 발생 시점</text>
+  <text x="220" y="145" class="cell">Vuser 2.67K</text>
+  <text x="420" y="145" class="cell">Vuser 3.20K</text>
+  <text x="620" y="145" class="cell">JWT 방식이 더 늦음</text>
+
+  <rect x="0" y="160" width="900" height="40" class="bg2"/>
+  <text x="10" y="185" class="cell">전체 평균 응답시간</text>
+  <text x="220" y="185" class="cell">315.35ms</text>
+  <text x="420" y="185" class="cell">524.31ms</text>
+  <text x="620" y="185" class="cell">세션 방식이 39.84% 빠름</text>
+
+  <rect x="0" y="200" width="900" height="40" class="bg1"/>
+  <text x="10" y="225" class="cell">P95 응답시간</text>
+  <text x="220" y="225" class="cell">1.31s</text>
+  <text x="420" y="225" class="cell">2.30s</text>
+  <text x="620" y="225" class="cell">세션 방식이 43.04% 빠름</text>
+
+  <rect x="0" y="240" width="900" height="40" class="bg2"/>
+  <text x="10" y="265" class="cell">P95 기준 임계점</text>
+  <text x="220" y="265" class="cell">Vuser 3.00K</text>
+  <text x="420" y="265" class="cell">Vuser 2.87K</text>
+  <text x="620" y="265" class="cell">세션 방식이 더 늦게 초과</text>
+
+  <!-- 리소스 사용률 분석 -->
+  <rect x="0" y="280" width="900" height="40" class="bg1"/>
+  <text x="10" y="305" class="cell">CPU 사용률 (90% 시점)</text>
+  <text x="220" y="305" class="cell">Vuser 3.00K (94.6%)</text>
+  <text x="420" y="305" class="cell">Vuser 1.97K (92.8%)</text>
+  <text x="620" y="305" class="cell">JWT가 더 빠르게 임계점 도달 (1.03K 차이)</text>
+
+  <rect x="0" y="320" width="900" height="40" class="bg2"/>
+  <text x="10" y="345" class="cell">CPU 사용률 (98% 시점)</text>
+  <text x="220" y="345" class="cell">Vuser 3.70K (98.1%)</text>
+  <text x="420" y="345" class="cell">Vuser 2.80K (98.2%)</text>
+  <text x="620" y="345" class="cell">JWT가 더 빨리 도달 (0.9K 차이)</text>
+
+  <rect x="0" y="360" width="900" height="40" class="bg1"/>
+  <text x="10" y="385" class="cell">메모리 사용률</text>
+  <text x="220" y="385" class="cell">안정적</text>
+  <text x="420" y="385" class="cell">안정적</text>
+  <text x="620" y="385" class="cell">특이사항 없음</text>
+
+  <rect x="0" y="400" width="900" height="40" class="bg2"/>
+  <text x="10" y="425" class="cell">디스크 사용률</text>
+  <text x="220" y="425" class="cell">안정적</text>
+  <text x="420" y="425" class="cell">안정적</text>
+  <text x="620" y="425" class="cell">특이사항 없음</text>
+</svg>
