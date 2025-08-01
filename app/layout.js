@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Container from "@/components/Container";
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="kr">
+      <Head>
+        <meta name="google-site-verification" content="LXzAKbA2-HVF1l60gXdTElFNxVVLxh1rk6qwe1V41so" />
+      </Head>
       <body className={inter.className}>
         <Container>{children}</Container>
       </body>
