@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://an-jiohh.github.io</loc>
-<lastmod>2025-08-01T16:15:06.844Z</lastmod>
+<lastmod>2025-11-23T20:12:06.619Z</lastmod>
 </url>
 <url>
 <loc>https://an-jiohh.github.io/blog</loc>
-<lastmod>2025-08-01T16:15:06.844Z</lastmod>
+<lastmod>2025-11-23T20:12:06.619Z</lastmod>
 </url>
 <url>
 <loc>https://an-jiohh.github.io/category</loc>
-<lastmod>2025-08-01T16:15:06.844Z</lastmod>
+<lastmod>2025-11-23T20:12:06.619Z</lastmod>
 </url>
 <url>
 <loc>https://an-jiohh.github.io/blog/BackendCORS1</loc>
@@ -31,6 +31,14 @@
 <url>
 <loc>https://an-jiohh.github.io/blog/Backendload_test3</loc>
 <lastmod>2025-07-24T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://an-jiohh.github.io/blog/LLMgpt1</loc>
+<lastmod>2025-11-22T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://an-jiohh.github.io/blog/LLMgpt2</loc>
+<lastmod>2025-11-23T00:00:00.000Z</lastmod>
 </url>
 <url>
 <loc>https://an-jiohh.github.io/blog/LSS1</loc>
