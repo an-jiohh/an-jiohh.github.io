@@ -1,8 +1,8 @@
 1:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/e124e0da229202d9.css",{"as":"style"}]
-0:["GbToePPZqnFU5itfcWlmW",[[["",{"children":["blog",{"children":[["slug","BackendCORS1","d"],{"children":["__PAGE__?{\"slug\":\"BackendCORS1\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e124e0da229202d9.css","precedence":"next"}]],"$L4"]]]]
-5:I{"id":6685,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","222:static/chunks/222-846c3dee61afe17f.js","404:static/chunks/app/blog/page-2b1879a4b7dd3b5f.js"],"name":"","async":false}
-6:I{"id":3222,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","222:static/chunks/222-846c3dee61afe17f.js","404:static/chunks/app/blog/page-2b1879a4b7dd3b5f.js"],"name":"Image","async":false}
+0:["KTatOf0C_7IUq0x1y5Inh",[[["",{"children":["blog",{"children":[["slug","BackendCORS1","d"],{"children":["__PAGE__?{\"slug\":\"BackendCORS1\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e124e0da229202d9.css","precedence":"next"}]],"$L4"]]]]
+5:I{"id":6685,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","222:static/chunks/222-846c3dee61afe17f.js","404:static/chunks/app/blog/page-4c4ed4280d9bd9ea.js"],"name":"","async":false}
+6:I{"id":3222,"chunks":["685:static/chunks/685-1c7543f9470b706b.js","222:static/chunks/222-846c3dee61afe17f.js","404:static/chunks/app/blog/page-4c4ed4280d9bd9ea.js"],"name":"Image","async":false}
 7:I{"id":7767,"chunks":["272:static/chunks/webpack-c62b9263dde95db3.js","971:static/chunks/fd9d1056-5fc0659828b82348.js","596:static/chunks/596-5f69a5936ae99734.js"],"name":"default","async":false}
 8:I{"id":7920,"chunks":["272:static/chunks/webpack-c62b9263dde95db3.js","971:static/chunks/fd9d1056-5fc0659828b82348.js","596:static/chunks/596-5f69a5936ae99734.js"],"name":"default","async":false}
 a:T520,2025-05-16T13:33:04.858+09:00  INFO 23918 --- [spring-login] [io-8080-exec-10] j.s.interceptor.LogInterceptor           : REQUEST [3038b5a2-ce1b-492b-8f49-26ce2e81827e][/signup][org.springframework.web.servlet.handler.AbstractHandlerMapping$PreFlightHttpRequestHandler@74110b6]
