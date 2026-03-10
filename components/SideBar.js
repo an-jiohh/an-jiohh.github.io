@@ -1,46 +1,19 @@
 import Link from "next/link";
-import { allPosts } from "contentlayer/generated";
+import { getAllTags, getTagPath } from "@/lib/content";
 
 const SideBar = () => {
-  const posts = allPosts.sort(
-    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
-  );
-  const set = new Set();
-  const valied = {};
-  posts.map((post) => {
-    post.tags.map((tag) => {
-      if (tag in valied) {
-        valied[tag].push(post);
-      } else {
-        valied[tag] = [post];
-      }
-      set.add(tag);
-    });
-  });
+  const tags = getAllTags();
 
   return (
-    <div>
-      {Object.keys(valied).map((post_key) => (
-        <div key={post_key}>
+    <div className="flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <div key={tag}>
           <Link
-            key={post_key}
-            href={`/category/${post_key}`}
-            passHref
-            className="mt-5 pb-5 hover:border-b-4 border-b border-green-100"
+            href={getTagPath(tag)}
+            className="inline-flex rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
           >
-            <div className={`font-medium text-sm`}>{post_key}</div>
+            <div className="font-medium text-sm">{tag}</div>
           </Link>
-          {/* 세부항목 */}
-          {/* {valied[post_key].map((post) => (
-            <Link
-              key={post._id}
-              href={`/blog/${post.slug}`}
-              passHref
-              className="mt-5 pb-5 hover:border-b-4 border-b border-green-100"
-            >
-              <div className={`font-light text-xs`}>{post.title}</div>
-            </Link>
-          ))} */}
         </div>
       ))}
     </div>

@@ -2,9 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/*": ["./*"]
     }
   },
-  "include": [".contentlayer/generated"]
+  "include": ["app/**/*.js", "components/**/*.js", "data/**/*.js", "lib/**/*.js", ".velite/**/*.js", "*.mjs", "*.js"]
 }
