@@ -1,29 +1,52 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Container from "@/components/Container";
-import Head from "next/head";
-import GoogleTagManager from "@/components/GoogleTagManager";
-import GoogleTagManagerNoScript from "@/components/GoogleTagManagerNoScript";
+import {
+  GOOGLE_SITE_VERIFICATION,
+  GTM_ID,
+  SITE_DESCRIPTION,
+  SITE_LOCALE,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "지호의 블로그",
-  description: "개발, 기술, 일상에 대한 생각을 기록하고 공유하는 공간입니다.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_TITLE}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: SITE_LOCALE,
+    url: SITE_URL,
+    siteName: SITE_TITLE,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
   verification: {
-    google: "LXzAKbA2-HVF1l60gXdTElFNxVVLxh1rk6qwe1V41so",
+    google: GOOGLE_SITE_VERIFICATION,
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="kr">
-      <Head>
-        <GoogleTagManager />
-      </Head>
+    <html lang="ko">
       <body className={inter.className}>
-        <GoogleTagManagerNoScript />
         <Container>{children}</Container>
+        {GTM_ID ? <GoogleTagManager gtmId={GTM_ID} /> : null}
       </body>
     </html>
   );

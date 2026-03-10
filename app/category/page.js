@@ -1,39 +1,39 @@
-import Container from "@/components/Container";
 import BlogPost from "@/components/BlogPost";
-import { allPosts } from "contentlayer/generated";
+import { getAllPosts, getAllTagEntries, getTagPath } from "@/lib/content";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Category",
+  alternates: {
+    canonical: "/category/",
+  },
+};
+
 export default function Category() {
-  const posts = allPosts.sort(
-    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
-  );
-  const set = new Set();
-  posts.map((post) => {
-    post.tags.map((tag) => set.add(tag));
-  });
-  const tags = [...set];
+  const posts = getAllPosts();
+  const tags = getAllTagEntries();
+
   return (
-    <div className={`mt-10 flex flex-col`}>
-      <h1 className={`text-3xl font-extrabold`}>Category</h1>
-      <div className={`mt-10 mb-10 flex flex-row flex-wrap`}>
+    <div className="mt-10 flex flex-col">
+      <h1 className="text-3xl font-extrabold">Category</h1>
+      <div className="mb-10 mt-10 flex flex-row flex-wrap gap-2">
         {tags.map((tag) => (
           <Link
-            href={`/category/${tag}`}
-            passHref
-            className="m-2 px-1.5 py-0.8 hover:bg-green-300 border rounded-md bg-green-100 border-green-200"
-            key={tag}
+            href={getTagPath(tag.slug)}
+            key={tag.slug}
+            className="rounded-full border border-green-200 bg-green-100 px-3 py-1 text-sm text-green-900 transition hover:bg-green-200"
           >
-            {tag}
+            {tag.name}
           </Link>
         ))}
       </div>
       {posts.map((post) => (
         <BlogPost
-          date={post.date}
+          date={post.lastModified}
           title={post.title}
-          des={post.description}
-          slug={post.slug}
-          key={post._id}
+          description={post.description}
+          href={post.href}
+          key={post.path}
         />
       ))}
     </div>
