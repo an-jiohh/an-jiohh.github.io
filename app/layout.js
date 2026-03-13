@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Container from "@/components/Container";
 import {
+  AUTHOR_NAME,
   GOOGLE_SITE_VERIFICATION,
   GTM_ID,
   SITE_DESCRIPTION,
@@ -10,8 +10,6 @@ import {
   SITE_TITLE,
   SITE_URL,
 } from "@/lib/site";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,6 +29,7 @@ export const metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
+  authors: [{ name: AUTHOR_NAME }],
   twitter: {
     card: "summary_large_image",
     title: SITE_TITLE,
@@ -44,7 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
+      <body>
         <Container>{children}</Container>
         {GTM_ID ? <GoogleTagManager gtmId={GTM_ID} /> : null}
       </body>

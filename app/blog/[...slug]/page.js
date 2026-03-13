@@ -1,11 +1,17 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
+import CategoryWidget from "@/components/CategoryWidget";
 import MDXContent from "@/components/MDXContent";
+import PostNavigation from "@/components/PostNavigation";
+import TableOfContents, { MobileTableOfContents } from "@/components/TableOfContents";
 import {
-  formatDate,
+  getAdjacentPosts,
   getAllPostRouteParams,
   getPostBySlugSegments,
+  getTagPath,
   isCanonicalSegments,
 } from "@/lib/content";
+import { formatDate, getReadingTimeLabel } from "@/lib/post-utils";
 
 export async function generateMetadata({ params }) {
   const { slug = [] } = await params;
@@ -61,18 +67,81 @@ export default async function PostPage({ params }) {
     notFound();
   }
 
+  const primaryTag = post.tags?.[0] || null;
+  const relatedTags = (post.tags || []).map((tag) => ({
+    name: tag,
+    slug: tag,
+    canonicalPath: getTagPath(tag),
+    count: 0,
+  }));
+  const { previousPost, nextPost } = getAdjacentPosts(post);
+
   return (
-    <article className="mt-10">
-      <header className="mb-8 border-b border-slate-200 pb-6">
-        <p className="text-sm text-slate-500">{formatDate(post.lastModified)}</p>
-        <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-slate-900">
+    <div className="space-y-6">
+      <section className="editorial-surface rounded-[2rem] px-6 py-7 sm:px-8 lg:px-10">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-[var(--color-muted)]">
+          <Link href="/" className="hover:text-[var(--color-accent-strong)]">
+            Home
+          </Link>
+          <span>/</span>
+          <Link href="/blog/" className="hover:text-[var(--color-accent-strong)]">
+            Blog
+          </Link>
+          {primaryTag ? (
+            <>
+              <span>/</span>
+              <Link
+                href={getTagPath(primaryTag)}
+                className="hover:text-[var(--color-accent-strong)]"
+              >
+                {primaryTag}
+              </Link>
+            </>
+          ) : null}
+        </div>
+
+        <p className="mt-6 text-sm text-[var(--color-muted)]">
+          {formatDate(post.lastModified || post.date)}
+        </p>
+        <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
           {post.title}
         </h1>
-        <p className="mt-3 text-lg text-slate-600">{post.description}</p>
-      </header>
-      <div className="prose prose-slate max-w-none">
-        <MDXContent code={post.code} />
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--color-muted)]">
+          {post.description}
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {(post.tags || []).map((tag) => (
+            <Link
+              href={getTagPath(tag)}
+              key={tag}
+              className="rounded-full border border-[var(--color-border)] bg-[var(--color-background)] px-3 py-1.5 text-sm font-medium text-[var(--color-muted)] transition hover:text-[var(--color-accent-strong)]"
+            >
+              {tag}
+            </Link>
+          ))}
+          <span className="rounded-full bg-[var(--color-accent)]/55 px-3 py-1.5 text-sm font-medium text-[var(--color-accent-strong)]">
+            {getReadingTimeLabel(post.readingTime)}
+          </span>
+        </div>
+      </section>
+
+      <MobileTableOfContents headings={post.headings} />
+
+      <div className="editorial-grid">
+        <article className="editorial-surface rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
+          <div className="editorial-prose prose prose-slate max-w-none">
+            <MDXContent code={post.code} />
+          </div>
+
+          <PostNavigation previousPost={previousPost} nextPost={nextPost} />
+        </article>
+
+        <aside className="space-y-5">
+          <TableOfContents headings={post.headings} />
+          <CategoryWidget tags={relatedTags} title="관련 태그" />
+        </aside>
       </div>
-    </article>
+    </div>
   );
 }
