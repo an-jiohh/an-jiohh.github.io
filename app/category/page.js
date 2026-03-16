@@ -21,6 +21,8 @@ export default function Category() {
         title="Category"
         description="주제별로 묶인 글을 한눈에 보고, 관심 있는 카테고리로 바로 이동할 수 있습니다."
         showCategoryGrid
+        minimalHeader
+        showSidebarCategories={false}
       />
     </Suspense>
   );

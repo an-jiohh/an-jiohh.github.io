@@ -1,6 +1,5 @@
 import Link from "next/link";
 import CategoryWidget from "@/components/CategoryWidget";
-import HeroBio from "@/components/HeroBio";
 import PostCard from "@/components/PostCard";
 import { getAllTagEntries, getFeaturedPosts } from "@/lib/content";
 
@@ -15,50 +14,52 @@ export default function Home() {
   const tags = getAllTagEntries();
 
   return (
-    <div className="space-y-6">
-      <HeroBio />
+    <div className="space-y-8">
+      <section className="flex flex-col gap-3 px-1 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h1 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
+            Posts
+          </h1>
+          <p className="mt-2 text-sm text-[var(--color-muted)]">
+            새로운 글부터 차근차근 살펴보세요.
+          </p>
+        </div>
 
-      <div className="editorial-grid">
-        <section className="space-y-5">
-          <div className="editorial-surface rounded-[2rem] px-6 py-5 sm:px-8">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent-strong)]">
-                  Recent Posts
-                </p>
-                <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-4xl">
-                  최근 게시물
-                </h2>
-              </div>
+        <Link
+          href="/blog/"
+          className="text-sm font-medium text-[var(--color-accent-strong)] transition hover:opacity-75"
+        >
+          모두 보기 →
+        </Link>
+      </section>
 
-              <Link
-                href="/blog/"
-                className="text-sm font-medium text-[var(--color-accent-strong)] transition hover:opacity-75"
-              >
-                모두 보기 →
-              </Link>
-            </div>
+      <section className="space-y-5">
+        {posts.map((post) => (
+          <PostCard key={post.path} post={post} />
+        ))}
+      </section>
+
+      <section className="space-y-4 pt-2">
+        <div className="flex flex-col gap-2 px-1 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-3xl">
+              Category
+            </h2>
+            <p className="mt-1 text-sm text-[var(--color-muted)]">
+              관심 있는 주제로 찾을 수 있어요.
+            </p>
           </div>
 
-          {posts.map((post) => (
-            <PostCard key={post.path} post={post} />
-          ))}
-        </section>
+          <Link
+            href="/category/"
+            className="text-sm font-medium text-[var(--color-accent-strong)] transition hover:opacity-75"
+          >
+            전체 보기 →
+          </Link>
+        </div>
 
-        <aside className="space-y-5">
-          <CategoryWidget tags={tags} title="카테고리" showCounts />
-
-          <section className="editorial-surface rounded-[2rem] px-5 py-5">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-muted)]">
-              Note
-            </h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-              모든 글은 정적 페이지로 빌드되고, 목록 검색과 정렬은 클라이언트에서
-              빠르게 탐색할 수 있도록 구성됩니다.
-            </p>
-          </section>
-        </aside>
-      </div>
+        <CategoryWidget tags={tags} hideHeader />
+      </section>
     </div>
   );
 }

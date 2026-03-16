@@ -54,6 +54,8 @@ export default async function TagsPage({ params }) {
         description={`${tagEntry.name}와 관련된 글만 모아보는 카테고리 페이지입니다.`}
         selectedTag={tagEntry.name}
         showCategoryGrid
+        minimalHeader
+        showSidebarCategories={false}
       />
     </Suspense>
   );

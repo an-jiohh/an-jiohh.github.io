@@ -13,7 +13,7 @@ export default function HeroBio() {
     <section className="editorial-surface rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent-strong)]">
+          <p className="text-xs font-semibold text-[var(--color-accent-strong)]">
             Personal Editorial Space
           </p>
           <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">

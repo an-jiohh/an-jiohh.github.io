@@ -2,32 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-export function MobileTableOfContents({ headings }) {
-  if (!headings.length) {
-    return null;
-  }
-
-  return (
-    <details className="editorial-surface rounded-[1.75rem] px-5 py-4 lg:hidden" open>
-      <summary className="cursor-pointer text-sm font-semibold text-[var(--color-accent-strong)]">
-        이 글의 목차
-      </summary>
-      <nav className="mt-4 space-y-2">
-        {headings.map((heading) => (
-          <a
-            key={heading.id}
-            href={`#${heading.id}`}
-            className="block rounded-2xl px-3 py-2 text-sm text-[var(--color-muted)] hover:bg-[var(--color-background)]"
-            style={{ paddingLeft: `${heading.depth * 0.65}rem` }}
-          >
-            {heading.text}
-          </a>
-        ))}
-      </nav>
-    </details>
-  );
-}
-
 export default function TableOfContents({ headings }) {
   const [activeId, setActiveId] = useState(headings[0]?.id || null);
 
@@ -73,11 +47,8 @@ export default function TableOfContents({ headings }) {
   }
 
   return (
-    <aside className="editorial-surface hidden rounded-[1.75rem] px-5 py-5 lg:sticky lg:top-6 lg:block">
-      <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-muted)]">
-        On this page
-      </h2>
-      <nav className="mt-4 space-y-2">
+    <section className="editorial-surface rounded-[1.75rem] px-4 py-4 sm:px-5">
+      <nav className="space-y-1">
         {headings.map((heading) => {
           const active = heading.id === activeId;
 
@@ -85,7 +56,7 @@ export default function TableOfContents({ headings }) {
             <a
               key={heading.id}
               href={`#${heading.id}`}
-              className={`block rounded-2xl px-3 py-2 text-sm transition ${
+              className={`block rounded-xl px-3 py-1.5 text-sm leading-6 transition ${
                 active
                   ? "bg-[var(--color-accent)]/65 text-[var(--color-accent-strong)]"
                   : "text-[var(--color-muted)] hover:bg-[var(--color-background)]"
@@ -97,6 +68,6 @@ export default function TableOfContents({ headings }) {
           );
         })}
       </nav>
-    </aside>
+    </section>
   );
 }

@@ -12,7 +12,7 @@ function NavigationCard({ label, post, align = "left" }) {
         align === "right" ? "text-right" : ""
       }`}
     >
-      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-muted)]">
+      <p className="text-xs font-semibold text-[var(--color-muted)]">
         {label}
       </p>
       <p className="font-display mt-3 text-xl font-semibold leading-8 text-[var(--color-foreground)]">

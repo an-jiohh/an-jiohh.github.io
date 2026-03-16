@@ -62,7 +62,7 @@ export default function SiteHeader() {
   }
 
   return (
-    <header className="editorial-surface rounded-[2rem] px-5 py-4 sm:px-6 lg:px-8">
+    <header className="editorial-surface rounded-[2rem] px-5 py-3 sm:px-6 lg:px-8">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
           <Link href="/" className="flex items-center gap-3 text-[15px] text-slate-900">
@@ -78,9 +78,9 @@ export default function SiteHeader() {
               <span className="font-display text-lg font-semibold tracking-tight">
                 {SITE_TITLE}
               </span>
-              <span className="text-xs text-[var(--color-muted)]">
+              {/* <span className="text-xs text-[var(--color-muted)]">
                 Editorial notes on systems and engineering
-              </span>
+              </span> */}
             </div>
           </Link>
 
@@ -93,7 +93,7 @@ export default function SiteHeader() {
                   href={nav.link}
                   key={nav.title}
                   aria-current={active ? "page" : undefined}
-                  className={`rounded-full px-4 py-2 transition ${
+                  className={`rounded-[1.5rem] px-4 py-2 transition ${
                     active
                       ? "bg-[var(--color-accent)]/60 text-[var(--color-accent-strong)]"
                       : "hover:bg-white/70 hover:text-[var(--color-foreground)]"
@@ -109,9 +109,12 @@ export default function SiteHeader() {
         <form
           onSubmit={handleSubmit}
           key={`${pathname}:${initialQuery}`}
-          className="flex items-center gap-3 rounded-full border border-[var(--color-border)] bg-[var(--color-background)]/85 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]"
+          className="flex items-center gap-2.5 rounded-[1.35rem] border border-[var(--color-border)] bg-[var(--color-background)]/85 px-3.5 py-2 my-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] backdrop-blur-sm transition focus-within:border-[var(--color-accent)] lg:min-w-[248px]"
         >
-          <span aria-hidden="true" className="text-sm text-[var(--color-muted)]">
+          <span
+            aria-hidden="true"
+            className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-background)]/85 text-sm text-[var(--color-accent-strong)]"
+          >
             ⌕
           </span>
           <label className="sr-only" htmlFor="site-search">
@@ -123,7 +126,7 @@ export default function SiteHeader() {
             type="search"
             defaultValue={initialQuery}
             placeholder="제목, 설명, 태그 검색"
-            className="min-w-0 flex-1 bg-transparent text-sm text-[var(--color-foreground)] outline-none placeholder:text-[var(--color-muted)] sm:w-[220px]"
+            className="min-w-0 flex-1 bg-transparent text-sm text-[var(--color-foreground)] outline-none placeholder:text-[var(--color-muted)]/80 sm:w-[220px]"
           />
         </form>
       </div>

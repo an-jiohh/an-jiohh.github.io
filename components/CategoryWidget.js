@@ -5,17 +5,20 @@ export default function CategoryWidget({
   title = "카테고리",
   activeTag,
   showCounts = false,
+  hideHeader = false,
 }) {
   return (
     <section className="editorial-surface rounded-[2rem] px-5 py-5">
-      <div className="flex items-center justify-between gap-3">
-        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-muted)]">
-          {title}
-        </h2>
-        <span className="text-xs text-[var(--color-muted)]">{tags.length}개</span>
-      </div>
+      {!hideHeader ? (
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-xs font-semibold text-[var(--color-muted)]">
+            {title}
+          </h2>
+          <span className="text-xs text-[var(--color-muted)]">{tags.length}개</span>
+        </div>
+      ) : null}
 
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className={`${hideHeader ? "" : "mt-4"} flex flex-wrap gap-2`}>
         {tags.map((tag) => {
           const active = tag.name === activeTag;
 

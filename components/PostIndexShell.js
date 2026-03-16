@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { startTransition, useDeferredValue } from "react";
-import CategoryGrid from "@/components/CategoryGrid";
 import CategoryWidget from "@/components/CategoryWidget";
 import PostCard from "@/components/PostCard";
 import {
@@ -20,6 +18,8 @@ export default function PostIndexShell({
   description,
   selectedTag = null,
   showCategoryGrid = false,
+  minimalHeader = false,
+  showSidebarCategories = true,
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -58,27 +58,38 @@ export default function PostIndexShell({
 
   return (
     <div className="space-y-6">
-      <section className="editorial-surface rounded-[2rem] px-6 py-7 sm:px-8">
-        <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent-strong)]">
-            Browse Articles
-          </p>
-          <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
+      {minimalHeader ? (
+        <section className="px-1 pt-1">
+          <h1 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
             {title}
           </h1>
-          <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
-            {description}
-          </p>
-        </div>
-
-        {showCategoryGrid ? (
-          <div className="mt-8">
-            <CategoryGrid tags={tags} activeTag={selectedTag} />
+        </section>
+      ) : (
+        <section className="editorial-surface rounded-[2rem] px-6 py-7 sm:px-8">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold text-[var(--color-accent-strong)]">
+              Browse Articles
+            </p>
+            <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
+              {title}
+            </h1>
+            <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+              {description}
+            </p>
           </div>
-        ) : null}
-      </section>
+        </section>
+      )}
 
-      <div className="editorial-grid">
+      {showCategoryGrid ? (
+        <CategoryWidget
+          tags={tags}
+          activeTag={selectedTag}
+          showCounts
+          hideHeader
+        />
+      ) : null}
+
+      <div className={showSidebarCategories ? "editorial-grid" : "space-y-5"}>
         <section className="space-y-5">
           <div className="editorial-surface rounded-[2rem] px-6 py-5">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -162,33 +173,15 @@ export default function PostIndexShell({
           ) : null}
         </section>
 
-        <aside className="space-y-5">
-          <CategoryWidget
-            tags={tags}
-            title={selectedTag ? "모든 카테고리" : "카테고리로 보기"}
-            activeTag={selectedTag}
-          />
-
-          <section className="editorial-surface rounded-[2rem] px-5 py-5">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-muted)]">
-              Quick Links
-            </h2>
-            <div className="mt-4 space-y-3 text-sm text-[var(--color-muted)]">
-              <Link
-                href="/blog/"
-                className="block rounded-2xl bg-[var(--color-background)] px-4 py-3 hover:text-[var(--color-accent-strong)]"
-              >
-                모든 글 보기
-              </Link>
-              <Link
-                href="/category/"
-                className="block rounded-2xl bg-[var(--color-background)] px-4 py-3 hover:text-[var(--color-accent-strong)]"
-              >
-                카테고리 탐색
-              </Link>
-            </div>
-          </section>
-        </aside>
+        {showSidebarCategories ? (
+          <aside className="space-y-5">
+            <CategoryWidget
+              tags={tags}
+              title={selectedTag ? "모든 카테고리" : "카테고리로 보기"}
+              activeTag={selectedTag}
+            />
+          </aside>
+        ) : null}
       </div>
     </div>
   );

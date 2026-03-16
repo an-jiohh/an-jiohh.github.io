@@ -7,7 +7,7 @@ export default function SiteFooter() {
       <div className="flex flex-col gap-4 text-sm text-[var(--color-muted)] sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-medium text-[var(--color-foreground)]">
-            기록을 오래 남기기 위한 정적 블로그.
+            기록을 오래 남기기 위한 블로그
           </p>
           <p className="mt-1 text-xs">
             © {new Date().getFullYear()} {AUTHOR_NAME} · {SITE_TITLE}

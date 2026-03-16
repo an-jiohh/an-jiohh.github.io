@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import CategoryWidget from "@/components/CategoryWidget";
 import MDXContent from "@/components/MDXContent";
 import PostNavigation from "@/components/PostNavigation";
-import TableOfContents, { MobileTableOfContents } from "@/components/TableOfContents";
+import TableOfContents from "@/components/TableOfContents";
 import {
   getAdjacentPosts,
   getAllPostRouteParams,
@@ -68,12 +67,6 @@ export default async function PostPage({ params }) {
   }
 
   const primaryTag = post.tags?.[0] || null;
-  const relatedTags = (post.tags || []).map((tag) => ({
-    name: tag,
-    slug: tag,
-    canonicalPath: getTagPath(tag),
-    count: 0,
-  }));
   const { previousPost, nextPost } = getAdjacentPosts(post);
 
   return (
@@ -103,7 +96,7 @@ export default async function PostPage({ params }) {
         <p className="mt-6 text-sm text-[var(--color-muted)]">
           {formatDate(post.lastModified || post.date)}
         </p>
-        <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
+        <h1 className="font-display mt-3 text-2xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-3xl">
           {post.title}
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--color-muted)]">
@@ -126,22 +119,15 @@ export default async function PostPage({ params }) {
         </div>
       </section>
 
-      <MobileTableOfContents headings={post.headings} />
+      <TableOfContents headings={post.headings} />
 
-      <div className="editorial-grid">
-        <article className="editorial-surface rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
-          <div className="editorial-prose prose prose-slate max-w-none">
-            <MDXContent code={post.code} />
-          </div>
+      <article className="editorial-surface rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
+        <div className="editorial-prose prose prose-slate max-w-none">
+          <MDXContent code={post.code} />
+        </div>
 
-          <PostNavigation previousPost={previousPost} nextPost={nextPost} />
-        </article>
-
-        <aside className="space-y-5">
-          <TableOfContents headings={post.headings} />
-          <CategoryWidget tags={relatedTags} title="관련 태그" />
-        </aside>
-      </div>
+        <PostNavigation previousPost={previousPost} nextPost={nextPost} />
+      </article>
     </div>
   );
 }
