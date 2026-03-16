@@ -2,19 +2,145 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
+  --color-background: #f6f7f1;
+  --color-foreground: #24342d;
+  --color-surface: #ffffff;
+  --color-border: #d8e4da;
+  --color-accent: #b7d9bf;
+  --color-accent-strong: #315744;
+  --color-muted: #5f6e66;
+}
+
+:root {
+  color-scheme: light;
+  --font-ui:
+    "Pretendard Variable", "Pretendard", "SUIT Variable", "SUIT",
+    "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-display:
+    "Pretendard Variable", "Pretendard", "SUIT Variable", "SUIT",
+    "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--color-background);
 }
 
 body {
+  min-height: 100vh;
   background: var(--color-background);
   color: var(--color-foreground);
+  background-image:
+    radial-gradient(circle at top left, rgba(183, 217, 191, 0.24), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(246, 247, 241, 0.98));
+  font-family: var(--font-ui), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   text-underline-offset: 0.2em;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+::selection {
+  background: rgba(183, 217, 191, 0.65);
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.editorial-surface {
+  background: color-mix(in srgb, var(--color-surface) 88%, white 12%);
+  border: 1px solid color-mix(in srgb, var(--color-border) 92%, white 8%);
+  box-shadow:
+    0 12px 40px rgba(49, 87, 68, 0.06),
+    0 2px 8px rgba(36, 52, 45, 0.04);
+}
+
+.editorial-prose {
+  color: var(--color-foreground);
+  max-width: none;
+}
+
+.editorial-prose :where(h2, h3, h4) {
+  color: var(--color-foreground);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  scroll-margin-top: 7rem;
+}
+
+.editorial-prose :where(h2) {
+  margin-top: 2.75rem;
+  border-top: 1px solid rgba(216, 228, 218, 0.9);
+  padding-top: 2rem;
+  font-size: clamp(1.7rem, 2.6vw, 2.1rem);
+}
+
+.editorial-prose :where(h3) {
+  margin-top: 2rem;
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+}
+
+.editorial-prose :where(h4) {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.editorial-prose :where(p, ul, ol, blockquote, pre, table) {
+  color: color-mix(in srgb, var(--color-foreground) 84%, white 16%);
+}
+
+.editorial-prose :where(a) {
+  color: var(--color-accent-strong);
+  font-weight: 500;
+}
+
+.editorial-prose :where(img) {
+  width: 100%;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(216, 228, 218, 0.9);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.75rem;
+  box-shadow: 0 20px 40px rgba(49, 87, 68, 0.08);
+}
+
+.editorial-prose :where(code):not(:where(pre code)) {
+  border-radius: 999px;
+  background: rgba(183, 217, 191, 0.24);
+  padding: 0.2rem 0.5rem;
+  color: var(--color-accent-strong);
+}
+
+.editorial-prose :where(pre) {
+  overflow-x: auto;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(216, 228, 218, 0.9);
+  background: #f2f5ef;
+  padding: 1rem 1.2rem;
+}
+
+.editorial-prose :where(blockquote) {
+  border-left-color: var(--color-accent);
+  color: var(--color-muted);
+}
+
+.editorial-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .editorial-grid {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    align-items: start;
+  }
 }

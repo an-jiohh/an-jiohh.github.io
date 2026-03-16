@@ -38,3 +38,9 @@ next-env.d.ts
 .contentlayer
 .velite
 .ui-audit-modernization
+
+# kombai
+.kombai
+
+# ui audit
+.ui-audit
