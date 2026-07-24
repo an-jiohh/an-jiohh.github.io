@@ -34,12 +34,23 @@ export default function MDXContent({ code, components = {} }) {
     h3: createHeadingComponent("h3", "font-display"),
     h4: createHeadingComponent("h4", "font-display"),
   };
+  const imageComponents = {
+    img: function MDXImage({ alt = "", loading, decoding, ...props }) {
+      return createElement("img", {
+        ...props,
+        alt,
+        loading: loading || "lazy",
+        decoding: decoding || "async",
+      });
+    },
+  };
 
   return (
     <Component
       components={{
         ...sharedComponents,
         ...headingComponents,
+        ...imageComponents,
         ...components,
       }}
     />

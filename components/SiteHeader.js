@@ -62,20 +62,20 @@ export default function SiteHeader() {
   }
 
   return (
-    <header className="editorial-surface rounded-[2rem] px-5 py-3 sm:px-6 lg:px-8">
+    <header className="editorial-surface site-header">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
-          <Link href="/" className="flex items-center gap-3 text-[15px] text-slate-900">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+          <Link href="/" className="site-brand flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="지호의 블로그 로고"
-              width={42}
-              height={42}
+              width={40}
+              height={40}
               priority
-              className="rounded-full border border-[var(--color-border)] bg-white object-cover p-1"
+              className="site-logo object-cover"
             />
             <div className="flex flex-col">
-              <span className="font-display text-lg font-semibold tracking-tight">
+              <span className="font-display text-xl leading-7">
                 {SITE_TITLE}
               </span>
               {/* <span className="text-xs text-[var(--color-muted)]">
@@ -84,7 +84,7 @@ export default function SiteHeader() {
             </div>
           </Link>
 
-          <nav className="flex flex-wrap items-center gap-2 text-sm font-medium text-[var(--color-muted)]">
+          <nav aria-label="주요 메뉴" className="flex flex-wrap items-center gap-2">
             {navlinks.map((nav) => {
               const active = isActiveLink(pathname, nav.link);
 
@@ -93,11 +93,7 @@ export default function SiteHeader() {
                   href={nav.link}
                   key={nav.title}
                   aria-current={active ? "page" : undefined}
-                  className={`rounded-[1.5rem] px-4 py-2 transition ${
-                    active
-                      ? "bg-[var(--color-accent)]/60 text-[var(--color-accent-strong)]"
-                      : "hover:bg-white/70 hover:text-[var(--color-foreground)]"
-                  }`}
+                  className="site-nav-link"
                 >
                   {nav.title}
                 </Link>
@@ -109,14 +105,11 @@ export default function SiteHeader() {
         <form
           onSubmit={handleSubmit}
           key={`${pathname}:${initialQuery}`}
-          className="flex items-center gap-2.5 rounded-[1.35rem] border border-[var(--color-border)] bg-[var(--color-background)]/85 px-3.5 py-2 my-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] backdrop-blur-sm transition focus-within:border-[var(--color-accent)] lg:min-w-[248px]"
+          className="site-search flex items-center gap-2 lg:min-w-[248px]"
         >
-          <span
-            aria-hidden="true"
-            className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-background)]/85 text-sm text-[var(--color-accent-strong)]"
-          >
+          <button type="submit" className="search-submit" aria-label="검색">
             ⌕
-          </span>
+          </button>
           <label className="sr-only" htmlFor="site-search">
             검색
           </label>
@@ -125,8 +118,8 @@ export default function SiteHeader() {
             name="q"
             type="search"
             defaultValue={initialQuery}
-            placeholder="제목, 설명, 태그 검색"
-            className="min-w-0 flex-1 bg-transparent text-sm text-[var(--color-foreground)] outline-none placeholder:text-[var(--color-muted)]/80 sm:w-[220px]"
+            placeholder="검색"
+            className="min-w-0 flex-1 bg-transparent text-sm text-[var(--color-foreground)] outline-none placeholder:text-[var(--color-muted)] sm:w-[220px]"
           />
         </form>
       </div>

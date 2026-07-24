@@ -14,11 +14,17 @@ export default function Blog() {
   const tags = getAllTagEntries();
 
   return (
-    <Suspense fallback={<div className="editorial-surface rounded-[2rem] px-6 py-16" />}>
+    <Suspense
+      fallback={
+        <div className="editorial-surface empty-state" role="status">
+          글 목록을 불러오는 중이에요.
+        </div>
+      }
+    >
       <PostIndexShell
         posts={posts}
         tags={tags}
-        title="Posts"
+        title="글"
         description="검색, 정렬, 페이지네이션으로 글을 빠르게 훑어볼 수 있는 메인 아카이브입니다."
         minimalHeader
       />

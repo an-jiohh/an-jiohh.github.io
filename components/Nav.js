@@ -3,12 +3,12 @@ import navlinks from "@/data/navlinks";
 
 const Nav = () => {
   return (
-    <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium text-slate-600">
+    <nav aria-label="주요 메뉴" className="flex flex-wrap items-center gap-2">
       {navlinks.map((nav) => (
         <Link
           href={nav.link}
           key={nav.title}
-          className="transition hover:text-slate-950"
+          className="site-nav-link"
         >
           {nav.title}
         </Link>

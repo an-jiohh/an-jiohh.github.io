@@ -44,6 +44,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body>
+        <a className="skip-link" href="#main-content">
+          본문으로 건너뛰기
+        </a>
         <Container>{children}</Container>
         {GTM_ID ? <GoogleTagManager gtmId={GTM_ID} /> : null}
       </body>

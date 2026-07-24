@@ -10,9 +10,9 @@ const SideBar = () => {
         <div key={tag}>
           <Link
             href={getTagPath(tag)}
-            className="inline-flex rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+            className="tag-link inline-flex"
           >
-            <div className="font-medium text-sm">{tag}</div>
+            <div>{tag}</div>
           </Link>
         </div>
       ))}

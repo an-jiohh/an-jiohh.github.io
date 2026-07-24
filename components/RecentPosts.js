@@ -3,20 +3,20 @@ import { formatDate } from "@/lib/content";
 
 const RecentPosts = ({ posts }) => {
   return (
-    <section className="mt-10">
-      <h1 className="pb-5 text-3xl font-extrabold tracking-tight">최근 게시물</h1>
-      <div className="flex flex-col">
+    <section className="grid gap-4">
+      <h1 className="font-display post-card-title">최근 게시물</h1>
+      <div className="grid gap-3">
         {posts.slice(0, 5).map((post) => (
           <Link
             key={post.path}
             href={post.href}
-            className="mt-5 rounded-2xl border border-slate-200 px-5 py-4 transition hover:border-slate-300 hover:shadow-sm"
+            className="legacy-post-card"
           >
-            <div className="text-xs font-medium text-slate-400">
+            <div className="meta-label">
               {formatDate(post.lastModified)}
             </div>
-            <div className="mt-2 text-xl font-bold tracking-tight">{post.title}</div>
-            <div className="mt-2 font-light text-slate-600">{post.description}</div>
+            <div className="font-display legacy-post-title mt-2">{post.title}</div>
+            <div className="post-description mt-2">{post.description}</div>
           </Link>
         ))}
       </div>
