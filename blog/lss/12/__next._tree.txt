@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/23e47975e3038858.css","style"]
+:HL["/_next/static/css/a62fbb54480dd9de.css","style"]
 :HL["/images/LSS/longPolling.jpg","image"]
 :HL["/images/LSS/nonstateful.jpg","image"]
 :HL["/images/LSS/chatfullserver.jpg","image"]
@@ -9,4 +9,4 @@
 :HL["/images/LSS/smallGroupChat2.jpg","image"]
 :HL["/images/LSS/heartbeatEvent.jpg","image"]
 :HL["/images/LSS/onlineService.jpg","image"]
-0:{"buildId":"1NCnUuzmO4DH53p2E9tWH","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"c","paramKey":"lss/12","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"73ImsBSZdMmLDZnlzwFP6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"c","paramKey":"lss/12","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
