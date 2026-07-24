@@ -46,7 +46,13 @@ export default async function TagsPage({ params }) {
   const tags = getAllTagEntries();
 
   return (
-    <Suspense fallback={<div className="editorial-surface rounded-[2rem] px-6 py-16" />}>
+    <Suspense
+      fallback={
+        <div className="editorial-surface empty-state" role="status">
+          글 목록을 불러오는 중이에요.
+        </div>
+      }
+    >
       <PostIndexShell
         posts={posts}
         tags={tags}

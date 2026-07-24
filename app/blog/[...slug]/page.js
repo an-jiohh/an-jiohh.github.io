@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import MDXContent from "@/components/MDXContent";
 import PostNavigation from "@/components/PostNavigation";
-import TableOfContents from "@/components/TableOfContents";
 import {
   getAdjacentPosts,
   getAllPostRouteParams,
@@ -10,7 +9,7 @@ import {
   getTagPath,
   isCanonicalSegments,
 } from "@/lib/content";
-import { formatDate, getReadingTimeLabel } from "@/lib/post-utils";
+import { formatDate } from "@/lib/post-utils";
 
 export async function generateMetadata({ params }) {
   const { slug = [] } = await params;
@@ -70,64 +69,58 @@ export default async function PostPage({ params }) {
   const { previousPost, nextPost } = getAdjacentPosts(post);
 
   return (
-    <div className="space-y-6">
-      <section className="editorial-surface rounded-[2rem] px-6 py-7 sm:px-8 lg:px-10">
-        <div className="flex flex-wrap items-center gap-2 text-sm text-[var(--color-muted)]">
-          <Link href="/" className="hover:text-[var(--color-accent-strong)]">
-            Home
+    <div className="page-stack">
+      <section className="editorial-surface post-hero">
+        <nav aria-label="현재 위치" className="meta-text flex flex-wrap items-center gap-2">
+          <Link href="/" className="text-link">
+            홈
           </Link>
-          <span>/</span>
-          <Link href="/blog/" className="hover:text-[var(--color-accent-strong)]">
-            Blog
+          <span aria-hidden="true">/</span>
+          <Link href="/blog/" className="text-link">
+            글
           </Link>
           {primaryTag ? (
             <>
-              <span>/</span>
-              <Link
-                href={getTagPath(primaryTag)}
-                className="hover:text-[var(--color-accent-strong)]"
-              >
+              <span aria-hidden="true">/</span>
+              <Link href={getTagPath(primaryTag)} className="text-link">
                 {primaryTag}
               </Link>
             </>
           ) : null}
-        </div>
+        </nav>
 
-        <p className="mt-6 text-sm text-[var(--color-muted)]">
-          {formatDate(post.lastModified || post.date)}
+        <p className="meta-label mt-6">
+          수정일 · {formatDate(post.lastModified || post.date)}
         </p>
-        <h1 className="font-display mt-3 text-2xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-3xl">
+        <h1 className="font-display page-heading mt-2">
           {post.title}
         </h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--color-muted)]">
+        <p className="post-description mt-4 max-w-3xl">
           {post.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6 flex flex-wrap gap-2" aria-label="글 정보">
           {(post.tags || []).map((tag) => (
             <Link
               href={getTagPath(tag)}
               key={tag}
-              className="rounded-full border border-[var(--color-border)] bg-[var(--color-background)] px-3 py-1.5 text-sm font-medium text-[var(--color-muted)] transition hover:text-[var(--color-accent-strong)]"
+              className="tag-link"
             >
               {tag}
             </Link>
           ))}
-          <span className="rounded-full bg-[var(--color-accent)]/55 px-3 py-1.5 text-sm font-medium text-[var(--color-accent-strong)]">
-            {getReadingTimeLabel(post.readingTime)}
-          </span>
         </div>
       </section>
 
-      <TableOfContents headings={post.headings} />
+      <div className="post-reading-layout">
+        <article className="editorial-surface post-article">
+          <div className="editorial-prose prose prose-slate">
+            <MDXContent code={post.code} />
+          </div>
 
-      <article className="editorial-surface rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
-        <div className="editorial-prose prose prose-slate max-w-none">
-          <MDXContent code={post.code} />
-        </div>
-
-        <PostNavigation previousPost={previousPost} nextPost={nextPost} />
-      </article>
+          <PostNavigation previousPost={previousPost} nextPost={nextPost} />
+        </article>
+      </div>
     </div>
   );
 }

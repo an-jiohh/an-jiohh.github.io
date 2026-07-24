@@ -57,23 +57,17 @@ export default function PostIndexShell({
   }
 
   return (
-    <div className="space-y-6">
+    <div className="page-stack">
       {minimalHeader ? (
-        <section className="px-1 pt-1">
-          <h1 className="font-display text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
-            {title}
-          </h1>
+        <section>
+          <h1 className="font-display page-heading">{title}</h1>
+          <p className="meta-text mt-2">{description}</p>
         </section>
       ) : (
-        <section className="editorial-surface rounded-[2rem] px-6 py-7 sm:px-8">
+        <section className="editorial-surface post-hero">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold text-[var(--color-accent-strong)]">
-              Browse Articles
-            </p>
-            <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight text-[var(--color-foreground)] sm:text-5xl">
-              {title}
-            </h1>
-            <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+            <h1 className="font-display page-heading">{title}</h1>
+            <p className="meta-text mt-4">
               {description}
             </p>
           </div>
@@ -89,15 +83,15 @@ export default function PostIndexShell({
         />
       ) : null}
 
-      <div className={showSidebarCategories ? "editorial-grid" : "space-y-5"}>
-        <section className="space-y-5">
-          <div className="editorial-surface rounded-[2rem] px-6 py-5">
+      <div className={showSidebarCategories ? "editorial-grid" : "grid gap-4"}>
+        <section className="grid gap-4">
+          <div className="editorial-surface index-toolbar">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <p className="text-sm font-medium text-[var(--color-accent-strong)]">
+                <p className="meta-label">
                   {selectedTag ? `${selectedTag} 카테고리` : "전체 게시물"}
                 </p>
-                <p className="mt-1 text-sm text-[var(--color-muted)]">
+                <p className="meta-text mt-1">
                   {deferredQuery
                     ? `"${deferredQuery}" 검색 결과 ${filteredPosts.length}개`
                     : `${filteredPosts.length}개의 글`}
@@ -109,7 +103,7 @@ export default function PostIndexShell({
                 <select
                   value={sort}
                   onChange={(event) => updateParams({ sort: event.target.value, page: null })}
-                  className="rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-foreground)] outline-none"
+                  className="sort-control outline-none"
                 >
                   <option value="newest">최신순</option>
                   <option value="oldest">오래된순</option>
@@ -121,25 +115,25 @@ export default function PostIndexShell({
           {visiblePosts.length ? (
             visiblePosts.map((post) => <PostCard key={post.path} post={post} />)
           ) : (
-            <div className="editorial-surface rounded-[2rem] px-6 py-12 text-center">
-              <p className="font-display text-2xl text-[var(--color-foreground)]">
+            <div className="editorial-surface empty-state text-center">
+              <p className="font-display post-card-title">
                 검색 결과가 없습니다.
               </p>
-              <p className="mt-3 text-sm text-[var(--color-muted)]">
+              <p className="meta-text mt-3">
                 다른 검색어를 입력하거나 카테고리를 바꿔보세요.
               </p>
             </div>
           )}
 
           {totalPages > 1 ? (
-            <nav className="flex flex-wrap items-center justify-center gap-2 pt-2">
+            <nav aria-label="글 목록 페이지" className="flex flex-wrap items-center justify-center gap-2">
               <button
                 type="button"
                 onClick={() => updateParams({ page: currentPage > 1 ? currentPage - 1 : 1 })}
                 disabled={currentPage === 1}
-                className="rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-muted)] disabled:cursor-not-allowed disabled:opacity-45"
+                className="pagination-control"
               >
-                ← Prev
+                ← 이전
               </button>
 
               {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
@@ -147,10 +141,9 @@ export default function PostIndexShell({
                   type="button"
                   key={page}
                   onClick={() => updateParams({ page })}
-                  className={`h-11 w-11 rounded-full border text-sm font-semibold transition ${
-                    page === currentPage
-                      ? "border-[var(--color-accent-strong)] bg-[var(--color-accent-strong)] text-white"
-                      : "border-[var(--color-border)] bg-white text-[var(--color-muted)] hover:border-[var(--color-accent)]"
+                  aria-current={page === currentPage ? "page" : undefined}
+                  className={`pagination-control is-number ${
+                    page === currentPage ? "is-active" : ""
                   }`}
                 >
                   {page}
@@ -165,9 +158,9 @@ export default function PostIndexShell({
                   })
                 }
                 disabled={currentPage === totalPages}
-                className="rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm text-[var(--color-muted)] disabled:cursor-not-allowed disabled:opacity-45"
+                className="pagination-control"
               >
-                Next →
+                다음 →
               </button>
             </nav>
           ) : null}

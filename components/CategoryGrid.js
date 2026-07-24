@@ -10,16 +10,13 @@ export default function CategoryGrid({ tags, activeTag }) {
           <Link
             href={tag.canonicalPath}
             key={tag.slug}
-            className={`rounded-[1.5rem] border px-5 py-4 transition ${
-              active
-                ? "border-[var(--color-accent-strong)] bg-[var(--color-accent)]/50"
-                : "border-[var(--color-border)] bg-white hover:-translate-y-0.5 hover:border-[var(--color-accent)]"
-            }`}
+            aria-current={active ? "page" : undefined}
+            className="category-card p-5"
           >
-            <div className="font-display text-xl font-semibold text-[var(--color-foreground)]">
+            <div className="font-display category-card-title">
               {tag.name}
             </div>
-            <p className="mt-2 text-sm text-[var(--color-muted)]">{tag.count} posts</p>
+            <p className="meta-text mt-2">글 {tag.count}개</p>
           </Link>
         );
       })}

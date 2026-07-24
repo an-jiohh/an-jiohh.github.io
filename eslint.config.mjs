@@ -2,7 +2,15 @@ import nextVitals from "eslint-config-next/core-web-vitals";
 
 const config = [
   {
-    ignores: [".next/**", "out/**", ".velite/**", "node_modules/**"],
+    ignores: [
+      ".agents/**",
+      ".claude/**",
+      ".next/**",
+      ".opencode/**",
+      ".velite/**",
+      "node_modules/**",
+      "out/**",
+    ],
   },
   ...nextVitals,
 ];
