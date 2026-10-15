@@ -1,0 +1,14 @@
+{
+  "footerLight": {
+    "bg": "rgb(37, 78, 232)",
+    "fg": "rgba(255, 255, 255, 0.72)",
+    "size": "12px",
+    "theme": "light"
+  },
+  "footerDark": {
+    "bg": "rgb(48, 79, 199)",
+    "fg": "rgba(255, 255, 255, 0.72)",
+    "size": "12px",
+    "theme": "dark"
+  }
+}

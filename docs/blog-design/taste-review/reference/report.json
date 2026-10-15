@@ -1,0 +1,2405 @@
+{
+ "url": "https://takeruf.com/en/projects/token-meter",
+ "at": "2026-10-14T17:03:44.142Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.18,
+    0.78,
+    0.46,
+    0.31,
+    0.46,
+    0.44,
+    0.2,
+    0.43
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6815,
+     "screens": 7.6,
+     "words": 588,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "token-meter-detail.webp",
+      "token-meter-dashboard.webp",
+      "token-meter-providers.webp",
+      "token-meter-display.webp",
+      "token-meter-widget.webp",
+      "token-meter-ready.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [
+      "✳"
+     ]
+    },
+    "hero": {
+     "text": "Token Meter.",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 93.6,
+     "vw": 6.5,
+     "font": "DM Sans",
+     "weight": 550,
+     "tracking": -0.065,
+     "leading": 1.09,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.34,
+     "top": 261,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Token Meter.",
+     "words": 2,
+     "lines": 1,
+     "size": 93.6,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "takeru.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.059,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 38,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "✳",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 90,
+      "vw": 6.3,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 249,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Token Meter.",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 93.6,
+      "vw": 6.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.065,
+      "leading": 1.09,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 261,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Only the numbers you need, always within sight.",
+      "words": 8,
+      "chars": 47,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.63,
+      "top": 709,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See it in use.",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 1044,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three AIs. One place.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 2410,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A menu bar that works your way.",
+      "words": 7,
+      "chars": 31,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 3093,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep your limits on the desktop.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 3806,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your usage history stays on this Mac.",
+      "words": 7,
+      "chars": 37,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 4470,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready in minutes.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 5098,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Download and get started.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 5679,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 6139,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Give it a try.",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 54,
+      "vw": 3.8,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 6376,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See what’s next.",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 6579,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      25,
+      27,
+      34,
+      36,
+      42,
+      48,
+      54,
+      76,
+      90,
+      94
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 106,
+     "max": {
+      "size": 93.6,
+      "vw": 6.5,
+      "font": "DM Sans",
+      "text": "Token Meter"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.06,
+     "microSamples": [
+      "STAY IN YOUR FLOW",
+      "IN THE APP",
+      "01 / THE DETAILS",
+      "02 / THE DETAILS",
+      "03 / THE DETAILS",
+      "04 / THE DETAILS"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.04,
+     "smallText": 21
+    },
+    "eyebrows": [
+     {
+      "text": "한국어",
+      "above": "✳",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 211
+     },
+     {
+      "text": "STAY IN YOUR FLOW",
+      "above": "Token Meter.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 224
+     },
+     {
+      "text": "IN THE APP",
+      "above": "See it in use.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1010
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "above": "Three AIs. One place.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2374
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "above": "A menu bar that works your way.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3057
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "above": "Keep your limits on the desktop.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3770
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "above": "Your usage history stays on this Mac.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4434
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "above": "Ready in minutes.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5062
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "above": "Download and get started.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5643
+     },
+     {
+      "text": "WHEN YOU’RE READY",
+      "above": "Give it a try.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6343
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1934
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1934
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1934
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "size": 12,
+      "top": 2374
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "size": 12,
+      "top": 3057
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "size": 12,
+      "top": 3770
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "size": 12,
+      "top": 4434
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "size": 12,
+      "top": 5062
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "size": 12,
+      "top": 5643
+     },
+     {
+      "text": "07 / BEFORE YOU START",
+      "size": 12,
+      "top": 6101
+     }
+    ],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#edf0ed",
+       "top": 1112,
+       "hsl": {
+        "h": 120,
+        "s": 0.09,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#254ee8",
+       "top": 6480,
+       "hsl": {
+        "h": 227,
+        "s": 0.81,
+        "l": 0.53
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606560",
+       "share": 0.67
+      },
+      {
+       "color": "#17201e",
+       "share": 0.27
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.05
+      },
+      {
+       "color": "#254ee8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#254ee8",
+      "hsl": {
+       "h": 227,
+       "s": 0.81,
+       "l": 0.53
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 4,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Download the latest version (opens in a "
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.site-header.wrap 1280px",
+      "ul.story-facts.wrap 1280px",
+      "section.story-section.story-with-media 1280px",
+      "section.story-section.story-with-media 1280px",
+      "section.story-section.story-with-media 1280px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 6,
+     "squareMedia": 4,
+     "roundedMedia": 3,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2118
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 110,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "noto sans jp",
+     "noto sans jp fallback",
+     "dm sans",
+     "dm sans fallback"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.31,
+    0.6,
+    0.68,
+    0.75,
+    0.54,
+    0.65,
+    0.44
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7105,
+     "screens": 6.9,
+     "words": 588,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "token-meter-detail.webp",
+      "token-meter-dashboard.webp",
+      "token-meter-providers.webp",
+      "token-meter-display.webp",
+      "token-meter-widget.webp",
+      "token-meter-ready.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [
+      "✳"
+     ]
+    },
+    "hero": {
+     "text": "✳",
+     "words": 1,
+     "chars": 1,
+     "lines": 1,
+     "size": 62,
+     "vw": 8.1,
+     "font": "DM Sans",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.06,
+     "top": 239,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Token Meter.",
+     "words": 2,
+     "lines": 1,
+     "size": 49.9,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "takeru.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.059,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 38,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "✳",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 62,
+      "vw": 8.1,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 239,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Token Meter.",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 49.9,
+      "vw": 6.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.065,
+      "leading": 1.09,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 261,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Only the numbers you need, always within sight.",
+      "words": 8,
+      "chars": 47,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 680,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three AIs. One place.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1767,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A menu bar that works your way.",
+      "words": 7,
+      "chars": 31,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2653,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep your limits on the desktop.",
+      "words": 6,
+      "chars": 32,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3570,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your usage history stays on this Mac.",
+      "words": 7,
+      "chars": 37,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4648,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready in minutes.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Download and get started.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 6010,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 6417,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Give it a try.",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 54,
+      "vw": 7,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6704,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See what’s next.",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 43,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 6907,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "takeru.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.074,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 7048,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23,
+      25,
+      27,
+      31,
+      34,
+      36,
+      43,
+      50,
+      54,
+      62
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 62,
+      "vw": 8.1,
+      "font": "DM Sans",
+      "text": "✳"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.06,
+     "microSamples": [
+      "STAY IN YOUR FLOW",
+      "IN THE APP",
+      "01 / THE DETAILS",
+      "02 / THE DETAILS",
+      "03 / THE DETAILS",
+      "04 / THE DETAILS"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.04,
+     "smallText": 21
+    },
+    "eyebrows": [
+     {
+      "text": "STAY IN YOUR FLOW",
+      "above": "Token Meter.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 224
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "above": "Three AIs. One place.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1731
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "above": "A menu bar that works your way.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2617
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "above": "Keep your limits on the desktop.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3534
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "above": "Your usage history stays on this Mac.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4612
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "above": "Ready in minutes.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5007
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "above": "Download and get started.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5974
+     },
+     {
+      "text": "WHEN YOU’RE READY",
+      "above": "Give it a try.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6671
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1497
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1497
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1497
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "size": 12,
+      "top": 1731
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "size": 12,
+      "top": 2617
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "size": 12,
+      "top": 3534
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "size": 12,
+      "top": 4612
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "size": 12,
+      "top": 5007
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "size": 12,
+      "top": 5974
+     },
+     {
+      "text": "07 / BEFORE YOU START",
+      "size": 12,
+      "top": 6379
+     }
+    ],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#edf0ed",
+       "top": 1040,
+       "hsl": {
+        "h": 120,
+        "s": 0.09,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606560",
+       "share": 0.67
+      },
+      {
+       "color": "#17201e",
+       "share": 0.27
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.05
+      },
+      {
+       "color": "#254ee8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#254ee8",
+      "hsl": {
+       "h": 227,
+       "s": 0.81,
+       "l": 0.53
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 4,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Download the latest version (opens in a "
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.site-header.wrap 696px",
+      "ul.story-facts.wrap 696px",
+      "section.story-section.story-with-media 696px",
+      "section.story-section.story-with-media 696px",
+      "section.story-section.story-with-media 696px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 6,
+     "squareMedia": 4,
+     "roundedMedia": 3,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 110,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "noto sans jp",
+     "noto sans jp fallback",
+     "dm sans",
+     "dm sans fallback"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.34,
+    0.41,
+    0.62,
+    0.58,
+    0.65,
+    0.62,
+    0.44,
+    0.63
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6648,
+     "screens": 7.9,
+     "words": 576,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "token-meter-detail.webp",
+      "token-meter-dashboard.webp",
+      "token-meter-languages.webp",
+      "token-meter-providers.webp",
+      "token-meter-display.webp",
+      "token-meter-widget.webp",
+      "token-meter-ready.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Token Meter.",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 35.1,
+     "vw": 9,
+     "font": "DM Sans",
+     "weight": 550,
+     "tracking": -0.065,
+     "leading": 1.09,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.47,
+     "top": 211,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Token Meter.",
+     "words": 2,
+     "lines": 1,
+     "size": 35.1,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "takeru.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.067,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 26,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Token Meter.",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 35.1,
+      "vw": 9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.065,
+      "leading": 1.09,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 211,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Your AI usage, at a glance.",
+      "words": 6,
+      "chars": 27,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 274,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Only the numbers you need, always within sight.",
+      "words": 8,
+      "chars": 47,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See it in use.",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 1080,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three AIs. One place.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1664,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A menu bar that works your way.",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2330,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep your limits on the desktop.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3067,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your usage history stays on this Mac.",
+      "words": 7,
+      "chars": 37,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3890,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready in minutes.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4405,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Download and get started.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.04,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5145,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5672,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Give it a try.",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.045,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 6041,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See what’s next.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 54,
+      "vw": 13.8,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6281,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "takeru.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.074,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.2,
+      "top": 6596,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      22,
+      23,
+      27,
+      28,
+      30,
+      35,
+      36,
+      44,
+      54
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 15,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 47,
+     "max": {
+      "size": 54,
+      "vw": 13.8,
+      "font": "DM Sans",
+      "text": "See what’s"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.061,
+     "microSamples": [
+      "STAY IN YOUR FLOW",
+      "IN THE APP",
+      "01 / THE DETAILS",
+      "02 / THE DETAILS",
+      "03 / THE DETAILS",
+      "04 / THE DETAILS"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.04,
+     "smallText": 25
+    },
+    "eyebrows": [
+     {
+      "text": "中文",
+      "above": "Token Meter.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 157
+     },
+     {
+      "text": "3 providers · 4 languages",
+      "above": "Only the numbers you need, always within",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 671
+     },
+     {
+      "text": "IN THE APP",
+      "above": "See it in use.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 1049
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "above": "Three AIs. One place.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 1631
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "above": "A menu bar that works your way.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 2297
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "above": "Keep your limits on the desktop.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 3034
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "above": "Your usage history stays on this Mac.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 3857
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "above": "Ready in minutes.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 4372
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "above": "Download and get started.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 5112
+     },
+     {
+      "text": "07 / BEFORE YOU START",
+      "above": "Good to know.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 5637
+     },
+     {
+      "text": "WHEN YOU’RE READY",
+      "above": "Give it a try.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 6011
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1404
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1404
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1404
+     },
+     {
+      "text": "01 / THE DETAILS",
+      "size": 10,
+      "top": 1631
+     },
+     {
+      "text": "02 / THE DETAILS",
+      "size": 10,
+      "top": 2297
+     },
+     {
+      "text": "03 / THE DETAILS",
+      "size": 10,
+      "top": 3034
+     },
+     {
+      "text": "04 / THE DETAILS",
+      "size": 10,
+      "top": 3857
+     },
+     {
+      "text": "05 / THE DETAILS",
+      "size": 10,
+      "top": 4372
+     },
+     {
+      "text": "06 / THE DETAILS",
+      "size": 10,
+      "top": 5112
+     },
+     {
+      "text": "07 / BEFORE YOU START",
+      "size": 10,
+      "top": 5637
+     }
+    ],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#edf0ed",
+       "top": 1880,
+       "hsl": {
+        "h": 120,
+        "s": 0.09,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#254ee8",
+       "top": 6203,
+       "hsl": {
+        "h": 227,
+        "s": 0.81,
+        "l": 0.53
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#606560",
+       "share": 0.67
+      },
+      {
+       "color": "#17201e",
+       "share": 0.27
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.05
+      },
+      {
+       "color": "#254ee8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#254ee8",
+      "hsl": {
+       "h": 227,
+       "s": 0.81,
+       "l": 0.53
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 4,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Download the latest version (opens in a "
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.site-header.wrap 350px",
+      "ul.story-facts.wrap 350px",
+      "section.story-section.story-with-media 350px",
+      "section.story-section.story-with-media 350px",
+      "section.story-section.story-with-media 350px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 6,
+     "squareMedia": 4,
+     "roundedMedia": 3,
+     "mediaRadius": 6,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 612
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1580
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 82,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "noto sans jp",
+     "noto sans jp fallback",
+     "dm sans",
+     "dm sans fallback"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "2 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "10 eyebrow/kicker label(s) above headings: \"한국어\" above \"✳\"; \"STAY IN YOUR FLOW\" above \"Token Meter.\"; \"IN THE APP\" above \"See it in use.\"; \"01 / THE DETAILS\" above \"Three AIs. One place.\"; \"02 / THE DETAILS\" above \"A menu bar that works your way.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"01 / THE DETAILS\", \"02 / THE DETAILS\", \"03 / THE DETAILS\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "11 tiny uppercase letter-spaced labels (e.g. \"STAY IN YOUR FLOW\", \"IN THE APP\", \"01 / THE DETAILS\", \"02 / THE DETAILS\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✳",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "11 thin rule(s)/divider line(s): header.site-header.wrap 1280px | ul.story-facts.wrap 1280px | section.story-section.story-with-media 1280px | section.story-section.story-with-media 1280px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "17 different font sizes (11, 12, 13, 14, 15, 16, 17, 25, 27, 34, 36, 42, 48, 54, 76, 90, 94).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 106 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "21 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 390,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/desktop-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/desktop-page-01.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/desktop-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/tablet-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/tablet-page-01.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/tablet-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/mobile-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/reference/mobile-page-01.jpg"
+   ]
+  }
+ ]
+}

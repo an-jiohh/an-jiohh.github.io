@@ -1,0 +1,1768 @@
+{
+ "url": "http://127.0.0.1:3000/blog/backend/cache-stampede/",
+ "at": "2026-10-14T17:03:14.697Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.28,
+    0.31,
+    0.22,
+    0.19,
+    0.48,
+    0.39,
+    0.41,
+    0.44,
+    0.44,
+    0.48,
+    0.43,
+    0.34
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 12975,
+     "screens": 14.4,
+     "words": 1470,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cache_stampede_thumbnail.png",
+      "cache_stampede_ex.png",
+      "cache_stempede.png",
+      "cache_stampede_a.png",
+      "jitter_basic.png",
+      "cache_steampede_vs_jitter.png",
+      "hot_key.png",
+      "hot_key_a.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+     "words": 9,
+     "chars": 34,
+     "lines": 2,
+     "size": 48,
+     "vw": 3.3,
+     "font": "DM Sans",
+     "weight": 550,
+     "tracking": -0.035,
+     "leading": 1.45,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.63,
+     "top": 216,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+     "words": 9,
+     "lines": 2,
+     "size": 48,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "지호의 블로그.",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 38,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+      "words": 9,
+      "chars": 34,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 216,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드와 핫키 만료",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 1319,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 3336,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "핫키 만료",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 6753,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "실무에서 캐시 문제가 발생하였을때 어떤 문제를 확인할 수 있을까?",
+      "words": 9,
+      "chars": 36,
+      "lines": 2,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 10507,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "마무리",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 11956,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "기록을 오래 남기기.",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 12739,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 1
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      25,
+      27,
+      34,
+      42,
+      48,
+      76
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 17,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 94,
+     "max": {
+      "size": 76,
+      "vw": 5.3,
+      "font": "DM Sans",
+      "text": "기록을"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.17,
+     "centerShare": 0,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#254ee8",
+       "top": 12633,
+       "hsl": {
+        "h": 227,
+        "s": 0.81,
+        "l": 0.53
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#17201e",
+       "share": 0.94
+      },
+      {
+       "color": "#606560",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      },
+      {
+       "color": "#254ee8",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#17201e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "본문으로 건너뛰기"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site-header.wrap 1280px",
+      "div.article-layout 1280px",
+      "nav.post-navigation 800px",
+      "nav.toc-desktop 280px",
+      "div.footer-bottom 1280px"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 6,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4791
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.19
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 110,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "dm sans fallback",
+     "__nextjs-geist"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.51,
+    0.32,
+    0.24,
+    0.59,
+    0.41,
+    0.54,
+    0.57,
+    0.38,
+    0.77,
+    0.52,
+    0.54,
+    0.35
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 12631,
+     "screens": 12.3,
+     "words": 1406,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cache_stampede_thumbnail.png",
+      "cache_stampede_ex.png",
+      "cache_stempede.png",
+      "cache_stampede_a.png",
+      "jitter_basic.png",
+      "cache_steampede_vs_jitter.png",
+      "hot_key.png",
+      "hot_key_a.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "지호의 블로그.",
+     "words": 2,
+     "chars": 8,
+     "lines": 1,
+     "size": 34,
+     "vw": 4.4,
+     "font": "DM Sans",
+     "weight": 750,
+     "tracking": -0.035,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.24,
+     "top": 38,
+     "tag": "a",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+     "words": 9,
+     "lines": 1,
+     "size": 30.7,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "지호의 블로그.",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 38,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+      "words": 9,
+      "chars": 34,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 216,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드와 핫키 만료",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1280,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3311,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "핫키 만료",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 6631,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "실무에서 캐시 문제가 발생하였을때 어떤 문제를 확인할 수 있을까?",
+      "words": 9,
+      "chars": 36,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 10236,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "마무리",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 11667,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "기록을 오래 남기기.",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 43,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 12432,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Jiho An.",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 12573,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 1
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      25,
+      27,
+      31,
+      34,
+      43
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 17,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 43,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "text": "기록을"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.17,
+     "centerShare": 0,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#17201e",
+       "share": 0.94
+      },
+      {
+       "color": "#606560",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      },
+      {
+       "color": "#254ee8",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#17201e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "본문으로 건너뛰기"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site-header.wrap 696px",
+      "div.article-layout 696px",
+      "nav.post-navigation 696px",
+      "details.toc-mobile 696px",
+      "div.footer-bottom 696px"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 6,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 110,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "dm sans fallback"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.47,
+    0.41,
+    0.39,
+    0.27,
+    0.53,
+    0.66,
+    0.58,
+    0.54,
+    0.54,
+    0.66,
+    0.47,
+    0.38
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12821,
+     "screens": 15.2,
+     "words": 1399,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "cache_stampede_thumbnail.png",
+      "cache_stampede_ex.png",
+      "cache_stempede.png",
+      "cache_stampede_a.png",
+      "jitter_basic.png",
+      "cache_steampede_vs_jitter.png",
+      "hot_key.png",
+      "hot_key_a.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "지호의 블로그.",
+     "words": 2,
+     "chars": 8,
+     "lines": 1,
+     "size": 30,
+     "vw": 7.7,
+     "font": "DM Sans",
+     "weight": 750,
+     "tracking": -0.035,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.42,
+     "top": 26,
+     "tag": "a",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+     "words": 9,
+     "lines": 2,
+     "size": 28,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "지호의 블로그.",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 26,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Redis에게 캐시 잘 먹이는 방법 – 캐시 스탬피드와 핫키.",
+      "words": 9,
+      "chars": 34,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.45,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 189,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드와 핫키 만료",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1147,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1351,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "핫키 만료",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1644,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "환경 구성",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2282,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "테스트 시나리오 구성",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2597,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3303,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "캐시 스탬피드 확인",
+      "words": 3,
+      "chars": 10,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3461,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "지터(Jitter)를 적용해보자",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4346,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "선 계산(PER 알고리즘)",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5676,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "핫키 만료",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6556,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "핫키 증상 확인",
+      "words": 3,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6629,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Lock을 이용하여 해결해보자",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7719,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "항상 락을 사용하면 될까?",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9492,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "실무에서 캐시 문제가 발생하였을때 어떤 문제를 확인할 수 있을까?",
+      "words": 9,
+      "chars": 36,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9842,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "실제에서는 어떤 증상이 발생할까?",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10712,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "마무리",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11621,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "GPT은 직접 사드세요... 제발 - GPT 3",
+      "words": 7,
+      "chars": 26,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 550,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 12190,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "기록을 오래 남기기.",
+      "words": 3,
+      "chars": 11,
+      "lines": 2,
+      "size": 54,
+      "vw": 13.8,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 12450,
+      "mixedFonts": [
+       "DM Sans",
+       "Georgia italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Jiho An.",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "DM Sans",
+      "weight": 750,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 12769,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 21,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 1
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.1,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      22,
+      27,
+      28,
+      30,
+      54
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 15,
+      "leading": 2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 47,
+     "max": {
+      "size": 54,
+      "vw": 13.8,
+      "font": "DM Sans",
+      "text": "기록을"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.17,
+     "centerShare": 0,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fcfdfb",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.33,
+      "l": 0.99
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#edf0ed",
+       "top": 5915,
+       "hsl": {
+        "h": 120,
+        "s": 0.09,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#254ee8",
+       "top": 12364,
+       "hsl": {
+        "h": 227,
+        "s": 0.81,
+        "l": 0.53
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#17201e",
+       "share": 0.94
+      },
+      {
+       "color": "#606560",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      },
+      {
+       "color": "#254ee8",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#17201e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "본문으로 건너뛰기"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site-header.wrap 350px",
+      "div.article-layout 350px",
+      "nav.post-navigation 350px",
+      "details.toc-mobile 350px",
+      "div.footer-bottom 350px"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 6,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4645
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.19
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 82,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "dm sans fallback"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "1 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "10 thin rule(s)/divider line(s): header.site-header.wrap 1280px | div.article-layout 1280px | nav.post-navigation 800px | nav.toc-desktop 280px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "3 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (11, 12, 14, 15, 16, 17, 25, 27, 34, 42, 48, 76).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 94 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "2 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 48px (3.3vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/desktop-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/desktop-page-01.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/desktop-page-02.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/desktop-page-03.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/tablet-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/tablet-page-01.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/tablet-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/mobile-fold.jpg",
+   "pages": [
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/mobile-page-01.jpg",
+    "/Users/jiho/github/an-jiohh.github.io/docs/blog-design/taste-review/article/mobile-page-02.jpg"
+   ]
+  }
+ ]
+}

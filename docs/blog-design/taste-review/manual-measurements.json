@@ -1,0 +1,20 @@
+[
+  {
+    "body": "17px",
+    "h2": "42px",
+    "h3": "25px",
+    "prose": 800,
+    "title": "48px",
+    "tocWidth": 280,
+    "width": 1440
+  },
+  {
+    "body": "17px",
+    "h2": "27px",
+    "h3": "25px",
+    "prose": 696,
+    "title": "30.72px",
+    "tocDesktop": "none",
+    "width": 768
+  }
+]

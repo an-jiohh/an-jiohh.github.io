@@ -1,33 +1,16 @@
 import Link from "next/link";
 import { formatDate } from "@/lib/post-utils";
+import TagLinks from "./TagLinks";
 
-export default function PostCard({ post }) {
+export default function PostCard({ post, tagEntries = [] }) {
   return (
-    <Link
-      href={post.href}
-      className="post-card group"
-    >
-      <div className="meta-label">
-        <span>{formatDate(post.lastModified || post.date)}</span>
+    <article className="post-row">
+      <div className="post-row-meta"><span className="meta-label">수정일</span><time dateTime={post.lastModified || post.date}>{formatDate(post.lastModified || post.date)}</time></div>
+      <div className="post-row-copy">
+        <h2 className="post-card-title"><Link href={post.href}>{post.title}</Link></h2>
+        {post.description ? <p className="post-description">{post.description}</p> : null}
+        <TagLinks tags={post.tags} tagEntries={tagEntries} />
       </div>
-
-      <h2 className="font-display post-card-title mt-3">
-        {post.title}
-      </h2>
-      <p className="post-description mt-3 line-clamp-3">
-        {post.description}
-      </p>
-
-      <div className="mt-4 flex flex-wrap gap-2" aria-label="글 카테고리">
-        {post.tags?.map((tag) => (
-          <span
-            key={tag}
-            className="tag"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-    </Link>
+    </article>
   );
 }

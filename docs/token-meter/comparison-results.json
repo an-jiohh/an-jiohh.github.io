@@ -1,0 +1,130 @@
+{
+  "round-1-before": {
+    "captures": [
+      "round-1/original.jpg",
+      "round-1/implementation-before.jpg"
+    ],
+    "image_size": [
+      1425,
+      990
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.2652187370783862,
+    "fraction_of_pixels_with_luma_difference_over_8": 0.0035272018429913167
+  },
+  "round-1-after": {
+    "captures": [
+      "round-1/original.jpg",
+      "round-1/implementation-after.jpg"
+    ],
+    "image_size": [
+      1425,
+      990
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.0004253056884635832,
+    "fraction_of_pixels_with_luma_difference_over_8": 2.835371256423888e-06
+  },
+  "round-2-menu-before": {
+    "captures": [
+      "round-2/original-menu.jpg",
+      "round-2/implementation-menu-before.jpg"
+    ],
+    "image_size": [
+      375,
+      812
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.0,
+    "fraction_of_pixels_with_luma_difference_over_8": 0.0
+  },
+  "round-2-menu-after": {
+    "captures": [
+      "round-2/original-menu-after.jpg",
+      "round-2/implementation-menu-after.jpg"
+    ],
+    "image_size": [
+      375,
+      812
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.0,
+    "fraction_of_pixels_with_luma_difference_over_8": 0.0
+  },
+  "round-3-dark-after": {
+    "captures": [
+      "round-3/original-dark.jpg",
+      "round-3/implementation-dark-after.jpg"
+    ],
+    "image_size": [
+      1425,
+      990
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.0005795971410006498,
+    "fraction_of_pixels_with_luma_difference_over_8": 4.253056884635832e-06
+  },
+  "round-3-gallery-after": {
+    "captures": [
+      "round-3/original-gallery-end.jpg",
+      "round-3/implementation-gallery-end.jpg"
+    ],
+    "image_size": [
+      1425,
+      990
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.00011979443558390927,
+    "fraction_of_pixels_with_luma_difference_over_8": 0.0
+  },
+  "final-desktop": {
+    "captures": [
+      "final-original.jpg",
+      "final-implementation.jpg"
+    ],
+    "image_size": [
+      1425,
+      990
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.000634414318624845,
+    "fraction_of_pixels_with_luma_difference_over_8": 2.835371256423888e-06
+  },
+  "final-full-page": {
+    "captures": [
+      "final-original-full.jpg",
+      "final-implementation-full.jpg"
+    ],
+    "image_size": [
+      1425,
+      6825
+    ],
+    "rgb_mean_absolute_error_0_to_255": 0.0006751579804211384,
+    "fraction_of_pixels_with_luma_difference_over_8": 2.1386800334168755e-05
+  },
+  "geometry": {
+    "round-1": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "measured_elements": 26,
+      "original_body_height": 6825.59375,
+      "implementation_body_height": 6825.59375,
+      "differences": []
+    },
+    "round-2": {
+      "viewport": [
+        390,
+        844
+      ],
+      "measured_elements": 26,
+      "original_body_height": 6660.0859375,
+      "implementation_body_height": 6660.0859375,
+      "differences": []
+    },
+    "round-3": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "measured_elements": 26,
+      "original_body_height": 6825.59375,
+      "implementation_body_height": 6825.59375,
+      "differences": []
+    }
+  }
+}

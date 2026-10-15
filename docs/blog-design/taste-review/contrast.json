@@ -1,0 +1,60 @@
+[
+  {
+    "name": "light ink",
+    "fg": "#17201e",
+    "bg": "#fcfdfb",
+    "ratio": 16.31
+  },
+  {
+    "name": "light muted",
+    "fg": "#606560",
+    "bg": "#fcfdfb",
+    "ratio": 5.83
+  },
+  {
+    "name": "light link",
+    "fg": "#254ee8",
+    "bg": "#fcfdfb",
+    "ratio": 6.17
+  },
+  {
+    "name": "light action",
+    "fg": "#ffffff",
+    "bg": "#254ee8",
+    "ratio": 6.3
+  },
+  {
+    "name": "dark ink",
+    "fg": "#edf1ed",
+    "bg": "#141a17",
+    "ratio": 15.47
+  },
+  {
+    "name": "dark muted",
+    "fg": "#abb5ad",
+    "bg": "#141a17",
+    "ratio": 8.36
+  },
+  {
+    "name": "dark link",
+    "fg": "#91a8ff",
+    "bg": "#141a17",
+    "ratio": 7.77
+  },
+  {
+    "name": "dark action",
+    "fg": "#ffffff",
+    "bg": "#304fc7",
+    "ratio": 6.84
+  },
+  {
+    "name": "footer copyright alpha184",
+    "bg": "#254ee8",
+    "ratio": 4.04
+  },
+  {
+    "name": "footer copyright alpha184",
+    "bg": "#304fc7",
+    "ratio": 4.39
+  }
+]
