@@ -1,0 +1,22 @@
+[
+  {
+    "name": "reference",
+    "emFont": "Georgia, serif",
+    "emStyle": "italic",
+    "footerBg": "rgb(37, 78, 232)",
+    "scrollY": 5914.5,
+    "title": "76px",
+    "topPadding": "62px",
+    "tracking": "-3.8px"
+  },
+  {
+    "name": "blog",
+    "emFont": "Georgia, serif",
+    "emStyle": "italic",
+    "footerBg": "rgb(37, 78, 232)",
+    "scrollY": 2267.5,
+    "title": "76px",
+    "topPadding": "62px",
+    "tracking": "-2.66px"
+  }
+]

@@ -1,0 +1,46 @@
+/* Canonical tokens: docs/blog-design/DESIGN-SYSTEM.md */
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 100 1000; font-display: swap; src: url("/token-meter/assets/13971731025ec697-s.p.13971731.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans Fallback"; src: local("Arial"); ascent-override: 94.90%; descent-override: 29.66%; line-gap-override: 0%; size-adjust: 104.53%; }
+:root {
+  color-scheme: light dark;
+  --paper: light-dark(#f9fdfb, #141e1a);
+  --ink: light-dark(#172b25, #edf6f1);
+  --muted: light-dark(#596e64, #a8b9b0);
+  --blue: light-dark(#087568, #6eebd4);
+  --line: light-dark(#d7e6df, #34493f);
+  --strong-line: light-dark(#b5ccc0, #4b6657);
+  --surface: light-dark(#fff, #1c2a23);
+  --subtle: light-dark(#edf8f3, #1b3026);
+  --media: light-dark(#eaf4ef, #22392d);
+  --hover: light-dark(#d9f8ee, #234c3b);
+  --solid-blue: #0cefd3;
+  --on-action: #172b25;
+  --action-hover: #09d4ba;
+  --popover-shadow: 0 12px 28px rgba(20,22,20,.12);
+  --footer-line: #172b2540;
+  --footer-muted: #172b25b8;
+  --font-ui: "DM Sans", "DM Sans Fallback", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-editorial: Georgia, serif;
+  --page-max: 1280px;
+  --prose-max: 800px;
+  --gutter: 56px;
+  --space-xs: 6px; --space-sm: 8px; --space-md: 12px; --space-lg: 16px; --space-xl: 20px; --space-2xl: 24px;
+  --space-section: 80px;
+  --column-gap: 60px;
+  --radius-control: 4px; --radius-media: 6px;
+  --type-display: clamp(42px, 6.5vw, 94px);
+  --type-title: clamp(28px, 4vw, 48px);
+  --type-section: clamp(27px, 3.1vw, 42px);
+  --type-item: 25px;
+  --type-body: 17px;
+  --motion-control: 160ms;
+  --motion-menu: 180ms;
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+@media (max-width:1100px) { :root { --gutter:36px; } }
+@media (max-width:800px) { :root { --space-section:50px; } }
+@media (max-width:760px) { :root { --gutter:20px; } }
+@media (max-width:700px) { :root { --type-display:clamp(35px,9vw,60px); --type-item:22px; } }
+@media (max-width:480px) { :root { --type-body:15px; } }

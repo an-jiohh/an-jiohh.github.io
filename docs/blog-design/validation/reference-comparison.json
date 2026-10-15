@@ -1,0 +1,56 @@
+{
+  "reference": {
+    "background": "rgb(252, 253, 251)",
+    "blue": "light-dark(#254ee8,#91a8ff)",
+    "button": {
+      "bg": "rgb(37, 78, 232)",
+      "height": 50,
+      "radius": "4px",
+      "size": "13px",
+      "weight": "550"
+    },
+    "font": "\"DM Sans\", \"DM Sans Fallback\", \"Noto Sans JP\", \"Noto Sans JP Fallback\", sans-serif",
+    "header": {
+      "height": 110,
+      "width": 1280
+    },
+    "ink": "rgb(23, 32, 30)",
+    "line": "light-dark(#dce0dc,#343e38)",
+    "overflow": false,
+    "title": {
+      "size": "93.6px",
+      "weight": "550"
+    },
+    "viewport": [
+      1440,
+      1000
+    ]
+  },
+  "blog": {
+    "background": "rgb(252, 253, 251)",
+    "blue": "#254ee8 ",
+    "button": {
+      "bg": "rgb(37, 78, 232)",
+      "height": 50,
+      "radius": "4px",
+      "size": "13px",
+      "weight": "550"
+    },
+    "font": "\"DM Sans\", \"DM Sans Fallback\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", sans-serif",
+    "header": {
+      "height": 110,
+      "width": 1280
+    },
+    "ink": "rgb(23, 32, 30)",
+    "line": "#dce0dc ",
+    "overflow": false,
+    "title": {
+      "size": "93.6px",
+      "weight": "550"
+    },
+    "viewport": [
+      1440,
+      1000
+    ]
+  }
+}

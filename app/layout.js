@@ -42,8 +42,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
-      <body>
+    <html lang="ko" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <link rel="preload" href="/token-meter/assets/13971731025ec697-s.p.13971731.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <script dangerouslySetInnerHTML={{ __html: 'try{var t=localStorage.getItem("jiho-blog-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}' }} />
+      </head>
+      <body id="top">
         <a className="skip-link" href="#main-content">
           본문으로 건너뛰기
         </a>

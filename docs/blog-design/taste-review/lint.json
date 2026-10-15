@@ -1,0 +1,229 @@
+{
+ "files": 30,
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "file": "app/design-tokens.css",
+   "line": 23,
+   "match": "ui-monospace",
+   "message": "Monospace type. Only literal code may be monospace."
+  },
+  {
+   "level": "WARN",
+   "id": "h-screen",
+   "file": "app/globals.css",
+   "line": 19,
+   "match": "height:100vh",
+   "message": "100vh jumps on mobile. Use 100svh / 100dvh."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 23,
+   "match": "border-bottom:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "file": "app/globals.css",
+   "line": 43,
+   "match": "box-shadow:",
+   "message": "Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 43,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "file": "app/globals.css",
+   "line": 64,
+   "match": "✳",
+   "message": "Emoji used as UI."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 71,
+   "match": "border-bottom:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 72,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 83,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 84,
+   "match": "border-bottom:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 90,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 91,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 99,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 102,
+   "match": "border-right:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "file": "app/globals.css",
+   "line": 104,
+   "match": "box-shadow:",
+   "message": "Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 104,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 110,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 120,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 126,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 130,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 153,
+   "match": "border-left:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 154,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 156,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "app/globals.css",
+   "line": 164,
+   "match": "border:1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 168,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 179,
+   "match": "border-bottom:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "file": "app/globals.css",
+   "line": 180,
+   "match": "border-top:1px",
+   "message": "Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "file": "components/HeroBio.js",
+   "line": 6,
+   "match": "✳",
+   "message": "Emoji used as UI."
+  }
+ ]
+}

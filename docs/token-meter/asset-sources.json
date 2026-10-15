@@ -1,0 +1,80 @@
+[
+  {
+    "name": "13971731025ec697-s.p.13971731.woff2",
+    "kind": "font",
+    "source": "https://takeruf.com/en/_next/static/media/13971731025ec697-s.p.13971731.woff2",
+    "local": "public/token-meter/assets/13971731025ec697-s.p.13971731.woff2"
+  },
+  {
+    "name": "token-meter-detail.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-detail.webp",
+    "local": "public/token-meter/assets/token-meter-detail.webp"
+  },
+  {
+    "name": "token-meter-dashboard.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-dashboard.webp",
+    "local": "public/token-meter/assets/token-meter-dashboard.webp"
+  },
+  {
+    "name": "icon.svg",
+    "kind": "image",
+    "source": "https://takeruf.com/en/icon.svg?6b0ec8e864fa2269",
+    "local": "public/token-meter/assets/icon.svg"
+  },
+  {
+    "name": "token-meter-providers.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-providers.webp",
+    "local": "public/token-meter/assets/token-meter-providers.webp"
+  },
+  {
+    "name": "e8b0a6e706ee1409-s.e8b0a6e7.woff2",
+    "kind": "font",
+    "source": "https://takeruf.com/en/_next/static/media/e8b0a6e706ee1409-s.e8b0a6e7.woff2",
+    "local": "public/token-meter/assets/e8b0a6e706ee1409-s.e8b0a6e7.woff2"
+  },
+  {
+    "name": "b4c391cbeb2d3b33-s.b4c391cb.woff2",
+    "kind": "font",
+    "source": "https://takeruf.com/en/_next/static/media/b4c391cbeb2d3b33-s.b4c391cb.woff2",
+    "local": "public/token-meter/assets/b4c391cbeb2d3b33-s.b4c391cb.woff2"
+  },
+  {
+    "name": "4ee46c85e488cda3-s.4ee46c85.woff2",
+    "kind": "font",
+    "source": "https://takeruf.com/en/_next/static/media/4ee46c85e488cda3-s.4ee46c85.woff2",
+    "local": "public/token-meter/assets/4ee46c85e488cda3-s.4ee46c85.woff2"
+  },
+  {
+    "name": "666eb6e18c90b180-s.666eb6e1.woff2",
+    "kind": "font",
+    "source": "https://takeruf.com/en/_next/static/media/666eb6e18c90b180-s.666eb6e1.woff2",
+    "local": "public/token-meter/assets/666eb6e18c90b180-s.666eb6e1.woff2"
+  },
+  {
+    "name": "token-meter-display.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-display.webp",
+    "local": "public/token-meter/assets/token-meter-display.webp"
+  },
+  {
+    "name": "token-meter-widget.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-widget.webp",
+    "local": "public/token-meter/assets/token-meter-widget.webp"
+  },
+  {
+    "name": "token-meter-ready.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-ready.webp",
+    "local": "public/token-meter/assets/token-meter-ready.webp"
+  },
+  {
+    "name": "token-meter-languages.webp",
+    "kind": "image",
+    "source": "https://takeruf.com/en/projects/token-meter-languages.webp",
+    "local": "public/token-meter/assets/token-meter-languages.webp"
+  }
+]

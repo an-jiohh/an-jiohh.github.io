@@ -24,7 +24,7 @@ export default function Blog() {
       <PostIndexShell
         posts={posts}
         tags={tags}
-        title="글"
+        title="게시글"
         description="검색, 정렬, 페이지네이션으로 글을 빠르게 훑어볼 수 있는 메인 아카이브입니다."
         minimalHeader
       />

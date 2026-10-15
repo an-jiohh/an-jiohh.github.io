@@ -1,0 +1,46 @@
+TASTESKILL · INSPECT   http://127.0.0.1:3000/blog/
+
+MEASURED (first viewport listed)
+  hero headline   "글."  1 words · 1 line(s) · 93.6px (6.5vw) · DM Sans 550 · tracking -0.035em · leading 1.09
+  @768px          1 line(s) · 49.9px
+  @390px          1 line(s) · 35.1px
+  typefaces       DM Sans 99%
+  sizes in use    11 / 12 / 14 / 15 / 16 / 25 / 27 / 34 / 76 / 94 px
+  colour          page #fcfdfb · sections #254ee8 · button #ffffff
+  page            2.7 screens · 204 words · 0 images · hero media none
+  headings        3 · longest 1 line(s) · median 3 words
+
+FAIL — fix every one of these
+  [shadow] @1440px (+768, 390)  1 box-shadow(s) on elements at rest: section.category-widget → rgba(20, 22, 20, 0.12) 0px 12px 28px 0px
+      → Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).
+  [hairline] @1440px (+768, 390)  12 thin rule(s)/divider line(s): header.site-header.wrap 1280px | div.collection-toolbar 1280px | div.post-list 1280px | article.post-row 1280px
+      → Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.
+  [few-pictures] @1440px  Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.
+      → Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve.
+  [small-text] @1440px (+768, 390)  11 text blocks under 13px.
+      → Nothing meant to be read goes below 13px.
+  [still-page] @1440px  Only 0 element(s) moved while the page loaded and scrolled.
+      → Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback.
+  [empty-screens] @1440px  2 of 3 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 1, 2.
+      → An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it.
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [outlined-box] @1440px (+768, 390)  1 box(es) drawn with a 1px outline.
+      → Prefer a filled surface or no box.
+  [size-count] @1440px (+768, 390)  10 different font sizes (11, 12, 14, 15, 16, 25, 27, 34, 76, 94).
+      → A page needs about five: display, heading, lead, body, small.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  docs/blog-design/taste-review/posts/desktop-fold.jpg
+                  docs/blog-design/taste-review/posts/desktop-page-01.jpg
+  tablet 768px    docs/blog-design/taste-review/posts/tablet-fold.jpg
+                  docs/blog-design/taste-review/posts/tablet-page-01.jpg
+  mobile 390px    docs/blog-design/taste-review/posts/mobile-fold.jpg
+                  docs/blog-design/taste-review/posts/mobile-page-01.jpg
+
+report: docs/blog-design/taste-review/posts/report.json
+RESULT: 6 FAIL, 4 WARN — not done.

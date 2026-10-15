@@ -1,0 +1,42 @@
+
+> an-jiohh.github.io@0.1.0 build
+> next build --webpack
+
+[32m[VELITE][0m build finished in 599.40ms
+▲ Next.js 16.1.6 (webpack)
+- Experiments (use with caution):
+  · cpus: 1
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.0s
+  Running TypeScript ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/82) ...
+  Generating static pages using 1 worker (20/82) 
+  Generating static pages using 1 worker (40/82) 
+  Generating static pages using 1 worker (61/82) 
+✓ Generating static pages using 1 worker (82/82) in 828.6ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /blog
+├ ● /blog/[...slug]
+│ ├ /blog/backend/cache-stampede
+│ ├ /blog/Backendcache_stampede
+│ ├ /blog/llm/gpt-3
+│ └ [+51 more paths]
+├ ○ /category
+├ ● /category/[tag]
+│ ├ /category/2023-tourism-gen-ai-hackathon
+│ ├ /category/2023 관광분야 GEN AI 해커톤
+│ ├ /category/large-scale-system-design-study
+│ └ [+18 more paths]
+└ ○ /sitemap.xml
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

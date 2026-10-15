@@ -1,0 +1,305 @@
+[
+  {
+    "name": "home",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 5,
+    "tagSize": "14px",
+    "titleSize": "93.6px",
+    "titleWeight": "550",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "name": "posts",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "93.6px",
+    "titleWeight": "550",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "name": "category",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "93.6px",
+    "titleWeight": "550",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "name": "search",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 1,
+    "tagSize": "14px",
+    "titleSize": "93.6px",
+    "titleWeight": "550",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "name": "article",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": "17px",
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": null,
+    "overflow": false,
+    "proseWidth": 800,
+    "rows": 0,
+    "tagSize": "14px",
+    "titleSize": "48px",
+    "titleWeight": "550",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "name": "home",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 5,
+    "tagSize": "14px",
+    "titleSize": "49.92px",
+    "titleWeight": "550",
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "name": "posts",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "49.92px",
+    "titleWeight": "550",
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "name": "category",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "49.92px",
+    "titleWeight": "550",
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "name": "search",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 1,
+    "tagSize": "14px",
+    "titleSize": "49.92px",
+    "titleWeight": "550",
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "name": "article",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": "17px",
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 110,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": null,
+    "overflow": false,
+    "proseWidth": 696,
+    "rows": 0,
+    "tagSize": "14px",
+    "titleSize": "30.72px",
+    "titleWeight": "550",
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "name": "home",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 82,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 5,
+    "tagSize": "14px",
+    "titleSize": "35.1px",
+    "titleWeight": "550",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "name": "posts",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 82,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "35.1px",
+    "titleWeight": "550",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "name": "category",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 82,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 8,
+    "tagSize": "14px",
+    "titleSize": "35.1px",
+    "titleWeight": "550",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "name": "search",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": null,
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 82,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": "14px",
+    "overflow": false,
+    "rows": 1,
+    "tagSize": "14px",
+    "titleSize": "35.1px",
+    "titleWeight": "550",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "name": "article",
+    "bg": "rgb(252, 253, 251)",
+    "bodySize": "15px",
+    "brokenImages": 0,
+    "footerInk": "rgb(255, 255, 255)",
+    "headerHeight": 82,
+    "imagesMissingAlt": 0,
+    "ink": "rgb(23, 32, 30)",
+    "metaSize": null,
+    "overflow": false,
+    "proseWidth": 350,
+    "rows": 0,
+    "tagSize": "14px",
+    "titleSize": "28px",
+    "titleWeight": "550",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

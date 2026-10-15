@@ -1,33 +1,6 @@
 import Link from "next/link";
-
-function NavigationCard({ label, post, align = "left" }) {
-  if (!post) {
-    return <div className="post-nav-placeholder hidden min-h-full lg:block" aria-hidden="true" />;
-  }
-
-  return (
-    <Link
-      href={post.href}
-      className={`post-nav-card ${
-        align === "right" ? "text-right" : ""
-      }`}
-    >
-      <p className="meta-label">{label}</p>
-      <p className="font-display post-nav-title mt-3">{post.title}</p>
-      <p className="post-description mt-2">{post.description}</p>
-    </Link>
-  );
-}
-
+import Icon from "./Icon";
 export default function PostNavigation({ previousPost, nextPost }) {
-  if (!previousPost && !nextPost) {
-    return null;
-  }
-
-  return (
-    <nav aria-label="글 탐색" className="post-navigation">
-      <NavigationCard label="이전 글" post={previousPost} />
-      <NavigationCard label="다음 글" post={nextPost} align="right" />
-    </nav>
-  );
+  if (!previousPost && !nextPost) return null;
+  return <nav aria-label="글 탐색" className="post-navigation">{previousPost ? <Link className="post-nav-link" href={previousPost.href}><span className="meta-label"><Icon name="arrow-left" size={15} />이전 글</span><span className="post-nav-title">{previousPost.title}</span>{previousPost.description ? <span className="post-description">{previousPost.description}</span> : null}</Link> : null}{nextPost ? <Link className="post-nav-link post-nav-link--next" href={nextPost.href}><span className="meta-label">다음 글<Icon name="arrow-right" size={15} /></span><span className="post-nav-title">{nextPost.title}</span>{nextPost.description ? <span className="post-description">{nextPost.description}</span> : null}</Link> : null}</nav>;
 }
